@@ -1,6 +1,8 @@
 # cs2classes
 my discord: patekfr
 
+client.dll
+
 ```
 struct CScriptComponent {
     char m_pad[48];
