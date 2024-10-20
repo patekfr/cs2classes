@@ -25,11 +25,8 @@ struct color
 using Color = color;
 using Vector = vec3;
 using QAngle = vec3;
-
-using GameTick_t = i32;
-
+using GameTick_t = int32;
 using GameTime_t = float;
-
 struct  CScriptComponent {
     char m_pad[48];
 };
