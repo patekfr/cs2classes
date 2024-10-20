@@ -1,6 +1,7 @@
 # cs2classes
 my discord: patekfr
 
+```
 struct CScriptComponent {
     char m_pad[48];
     CUtlSymbolLarge m_scriptClassName;
@@ -4665,3 +4666,4 @@ struct __declspec(align(16)) C_CSGO_PreviewPlayer {
 struct __declspec(align(16)) C_CSGO_PreviewPlayerAlias_csgo_player_previewmodel {
 };
 
+```
