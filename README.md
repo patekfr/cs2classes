@@ -20,12 +20,12 @@ struct __declspec(align(8))  C_BaseEntity {
     int32 m_iMaxHealth; 
     int32 m_iHealth; 
     uint8 m_lifeState; 
-    char m_pad6_848[6];
     bool m_bTakesDamage; 
+    char m_pad6_848[6];
     TakeDamageFlags_t m_nTakeDamageFlags; // Size: 8
     EntityPlatformTypes_t m_nPlatformType; 
-    char m_pad2_860[2];
     uint8 m_ubInterpolationFrame; 
+    char m_pad2_860[2];
     CHandle< C_BaseEntity > m_hSceneObjectController; 
     int32 m_nNoInterpolationTick; 
     int32 m_nVisibilityNoInterpolationTick; 
@@ -40,8 +40,8 @@ struct __declspec(align(8))  C_BaseEntity {
     int32 m_nSimulationTick; 
     int32 m_iCurrentThinkContext; 
     CUtlVector< thinkfunc_t > m_aThinkFunctions; // Size: 24
-    char m_pad3_940[3];
     bool m_bDisabledContextThinks; 
+    char m_pad3_940[3];
     float32 m_flAnimTime; 
     float32 m_flSimulationTime; 
     uint8 m_nSceneObjectOverrideFlags; 
@@ -74,15 +74,15 @@ struct __declspec(align(8))  C_BaseEntity {
     float32 m_flElasticity; 
     float32 m_flGravityScale; 
     float32 m_flTimeScale; 
-    char m_pad3_1132[3];
     bool m_bAnimatedEveryTick; 
+    char m_pad3_1132[3];
     GameTime_t m_flNavIgnoreUntilTime; 
-    char m_pad14_1152[14];
     uint16 m_hThink; // Size: 16
+    char m_pad14_1152[14];
     uint8 m_fBBoxVisFlags; 
     bool m_bPredictable; 
-    char m_pad1_1156[1];
     bool m_bRenderWithViewModels; 
+    char m_pad1_1156[1];
     CSplitScreenSlot m_nSplitUserPlayerPredictionSlot; 
     int32 m_nFirstPredictableCommand; 
     int32 m_nLastPredictableCommand; 
@@ -90,16 +90,16 @@ struct __declspec(align(8))  C_BaseEntity {
     CParticleProperty m_Particles; // Size: 40
     CUtlVector< float32 > m_vecPredictedScriptFloats; // Size: 24
     CUtlVector< int32 > m_vecPredictedScriptFloatIDs; // Size: 48
-    char m_pad12_1304[12];
     int32 m_nNextScriptVarRecordID; // Size: 16
+    char m_pad12_1304[12];
     QAngle m_vecAngVelocity; // Size: 12
     int32 m_DataChangeEventRef; 
     CUtlVector< CEntityHandle > m_dependencies; // Size: 24
-    char m_pad9_1357[9];
     int32 m_nCreationTick; // Size: 13
+    char m_pad9_1357[9];
     bool m_bAnimTimeChanged; 
-    char m_pad9_1368[9];
     bool m_bSimulationTimeChanged; // Size: 10
+    char m_pad9_1368[9];
     CUtlString m_sUniqueHammerID; // Size: 8
     BloodType m_nBloodType; 
 };
@@ -120,8 +120,8 @@ struct  CEntityIdentity {
     int32 m_nameStringableIndex; 
     CUtlSymbolLarge m_name; // Size: 8
     CUtlSymbolLarge m_designerName; // Size: 16
-    char m_pad4_56[4];
     uint32 m_flags; // Size: 8
+    char m_pad4_56[4];
     WorldGroupId_t m_worldGroupId; 
     uint32 m_fDataObjectTypes; 
     ChangeAccessorFieldPathIndex_t m_PathIndex; // Size: 24
@@ -168,8 +168,8 @@ struct  CGameSceneNode {
     bitfield:1 m_bDirtyBoneMergeBoneToRoot; // Size: 243
     uint8 m_nHierarchicalDepth; 
     uint8 m_nHierarchyType; 
-    char m_pad2_248[2];
     uint8 m_nDoNotSetAnimTimeInInvalidatePhysicsCount; 
+    char m_pad2_248[2];
     CUtlStringToken m_name; // Size: 64
     CUtlStringToken m_hierarchyAttachName; 
     float32 m_flZOffset; 
@@ -230,11 +230,11 @@ struct  CLightComponent {
     int32 m_nCastShadows; 
     int32 m_nShadowWidth; 
     int32 m_nShadowHeight; 
-    char m_pad3_196[3];
     bool m_bRenderDiffuse; 
+    char m_pad3_196[3];
     int32 m_nRenderSpecular; 
-    char m_pad3_204[3];
     bool m_bRenderTransmissive; 
+    char m_pad3_204[3];
     float32 m_flOrthoLightWidth; 
     float32 m_flOrthoLightHeight; 
     int32 m_nStyle; 
@@ -250,12 +250,12 @@ struct  CLightComponent {
     int32 m_nShadowCascadeResolution1; 
     int32 m_nShadowCascadeResolution2; 
     int32 m_nShadowCascadeResolution3; 
-    char m_pad3_272[3];
     bool m_bUsesBakedShadowing; 
+    char m_pad3_272[3];
     int32 m_nShadowPriority; 
     int32 m_nBakedShadowIndex; 
-    char m_pad3_284[3];
     bool m_bRenderToCubemaps; 
+    char m_pad3_284[3];
     int32 m_nDirectLight; 
     int32 m_nIndirectLight; 
     float32 m_flFadeMinDist; 
@@ -264,8 +264,8 @@ struct  CLightComponent {
     float32 m_flShadowFadeMaxDist; 
     bool m_bEnabled; 
     bool m_bFlicker; 
-    char m_pad1_312[1];
     bool m_bPrecomputedFieldsValid; 
+    char m_pad1_312[1];
     Vector m_vPrecomputedBoundsMins; // Size: 12
     Vector m_vPrecomputedBoundsMaxs; // Size: 12
     Vector m_vPrecomputedOBBOrigin; // Size: 12
@@ -279,8 +279,8 @@ struct  CLightComponent {
     float32 m_flSkyIntensity; 
     Color m_SkyAmbientBounce; 
     bool m_bUseSecondaryColor; 
-    char m_pad2_404[2];
     bool m_bMixedShadows; 
+    char m_pad2_404[2];
     GameTime_t m_flLightStyleStartTime; 
     float32 m_flCapsuleLength; 
     float32 m_flMinRoughness; 
@@ -289,12 +289,12 @@ struct  CLightComponent {
 struct  CRenderComponent {
     char m_pad[16];
     CNetworkVarChainer __m_pChainEntity; // Size: 64
-    char m_pad3_84[3];
     bool m_bIsRenderingWithViewModels; 
-    char m_pad8_96[8];
+    char m_pad3_84[3];
     uint32 m_nSplitscreenFlags; // Size: 12
-    char m_pad79_176[79];
+    char m_pad8_96[8];
     bool m_bEnableRendering; // Size: 80
+    char m_pad79_176[79];
     bool m_bInterpolationReadyToDraw; 
 };
 
@@ -308,18 +308,18 @@ struct __declspec(align(8))  C_PointCamera {
     float32 m_flFogEnd; 
     float32 m_flFogMaxDensity; 
     bool m_bActive; 
-    char m_pad2_1416[2];
     bool m_bUseScreenAspectRatio; 
+    char m_pad2_1416[2];
     float32 m_flAspectRatio; 
-    char m_pad3_1424[3];
     bool m_bNoSky; 
+    char m_pad3_1424[3];
     float32 m_fBrightness; 
     float32 m_flZFar; 
     float32 m_flZNear; 
     bool m_bCanHLTVUse; 
     bool m_bAlignWithParent; 
-    char m_pad1_1440[1];
     bool m_bDofEnabled; 
+    char m_pad1_1440[1];
     float32 m_flDofNearBlurry; 
     float32 m_flDofNearCrisp; 
     float32 m_flDofFarCrisp; 
@@ -327,8 +327,8 @@ struct __declspec(align(8))  C_PointCamera {
     float32 m_flDofTiltToGround; 
     float32 m_TargetFOV; 
     float32 m_DegreesPerSecond; 
-    char m_pad3_1472[3];
     bool m_bIsOn; 
+    char m_pad3_1472[3];
     C_PointCamera* m_pNext; 
 };
 
@@ -344,8 +344,8 @@ struct  CPropDataComponent {
     CUtlSymbolLarge m_iszPhysicsDamageTableName; // Size: 8
     CUtlSymbolLarge m_iszBasePropData; // Size: 8
     int32 m_nInteractions; 
-    char m_pad3_56[3];
     bool m_bSpawnMotionDisabled; 
+    char m_pad3_56[3];
     int32 m_nDisableTakePhysicsDamageSpawnFlag; 
     int32 m_nMotionDisabledSpawnFlag; 
 };
@@ -362,24 +362,24 @@ struct  CBuoyancyHelper {
 
 struct __declspec(align(8))  CBaseAnimGraph {
     char m_pad[3488];
-    char m_pad1_3490[1];
     bool m_bInitiallyPopulateInterpHistory; 
-    char m_pad13_3504[13];
+    char m_pad1_3490[1];
     bool m_bSuppressAnimEventSounds; // Size: 14
-    char m_pad3_3508[3];
+    char m_pad13_3504[13];
     bool m_bAnimGraphUpdateEnabled; 
+    char m_pad3_3508[3];
     float32 m_flMaxSlopeDistance; 
     Vector m_vLastSlopeCheckPos; // Size: 12
-    char m_pad3_3528[3];
     bool m_bAnimationUpdateScheduled; 
+    char m_pad3_3528[3];
     Vector m_vecForce; // Size: 12
     int32 m_nForceBone; 
     CBaseAnimGraph* m_pClientsideRagdoll; // Size: 8
-    char m_pad23_3576[23];
     bool m_bBuiltRagdoll; // Size: 24
+    char m_pad23_3576[23];
     PhysicsRagdollPose_t m_RagdollPose; // Size: 72
-    char m_pad15_3664[15];
     bool m_bRagdollClientSide; // Size: 16
+    char m_pad15_3664[15];
     bool m_bHasAnimatedMaterialAttributes; 
 };
 
@@ -390,8 +390,8 @@ struct  CBasePlayerControllerAPI {
 };
 
 struct  C_CommandContext {
-    char m_pad159_160[159];
     bool needsprocessing; // Size: 160
+    char m_pad159_160[159];
     char m_pad[160];
     int32 command_number; 
 };
@@ -410,8 +410,8 @@ struct  audioparams_t {
     char m_pad[8];
     Vector[8] localSound; // Size: 96
     int32 soundscapeIndex; 
-    char m_pad3_112[3];
     uint8 localBits; 
+    char m_pad3_112[3];
     int32 soundscapeEntityListIndex; 
     uint32 soundEventHash; 
 };
@@ -481,8 +481,8 @@ struct __declspec(align(8))  C_PostProcessingVolume {
     float32 m_flExposureFadeSpeedDown; 
     float32 m_flTonemapEVSmoothingRange; 
     bool m_bMaster; 
-    char m_pad2_3440[2];
     bool m_bExposureControl; 
+    char m_pad2_3440[2];
     float32 m_flRate; 
     float32 m_flTonemapPercentTarget; 
     float32 m_flTonemapPercentBrightPixels; 
@@ -521,8 +521,8 @@ struct  fogparams_t {
 struct __declspec(align(8))  C_FogController {
     char m_pad[1384];
     fogparams_t m_fog; // Size: 104
-    char m_pad3_1492[3];
     bool m_bUseAngles; 
+    char m_pad3_1492[3];
     int32 m_iChangedVariables; 
 };
 
@@ -530,8 +530,8 @@ struct  CPlayer_CameraServices {
     char m_pad[64];
     QAngle m_vecCsViewPunchAngle; // Size: 12
     GameTick_t m_nCsViewPunchAngleTick; 
-    char m_pad4_88[4];
     float32 m_flCsViewPunchAngleTickRatio; // Size: 8
+    char m_pad4_88[4];
     C_fogplayerparams_t m_PlayerFog; // Size: 64
     CHandle< C_ColorCorrection > m_hColorCorrectionCtrl; 
     CHandle< C_BaseEntity > m_hViewEntity; 
@@ -559,17 +559,17 @@ struct  CPlayer_ItemServices {
 
 struct  CPlayer_MovementServices {
     char m_pad[64];
-    char m_pad4_72[4];
     int32 m_nImpulse; // Size: 8
+    char m_pad4_72[4];
     CInButtonState m_nButtons; // Size: 32
     uint64 m_nQueuedButtonDownMask; // Size: 8
     uint64 m_nQueuedButtonChangeMask; // Size: 8
     uint64 m_nButtonDoublePressed; // Size: 8
     uint32[64] m_pButtonPressedCmdNumber; // Size: 256
-    char m_pad4_392[4];
     uint32 m_nLastCommandNumberProcessed; // Size: 8
-    char m_pad8_408[8];
+    char m_pad4_392[4];
     uint64 m_nToggleButtonDownMask; // Size: 16
+    char m_pad8_408[8];
     float32 m_flMaxspeed; 
     float32[4] m_arrForceSubtickMoveWhen; // Size: 16
     float32 m_flForwardMove; 
@@ -583,14 +583,14 @@ struct  CPlayer_MovementServices_Humanoid {
     char m_pad[472];
     float32 m_flStepSoundTime; 
     float32 m_flFallVelocity; 
-    char m_pad3_484[3];
     bool m_bInCrouch; 
+    char m_pad3_484[3];
     uint32 m_nCrouchState; 
     GameTime_t m_flCrouchTransitionStartTime; 
     bool m_bDucked; 
     bool m_bDucking; 
-    char m_pad1_496[1];
     bool m_bInDuckJump; 
+    char m_pad1_496[1];
     Vector m_groundNormal; // Size: 12
     float32 m_flSurfaceFriction; 
     CUtlStringToken m_surfaceProps; // Size: 16
@@ -599,12 +599,12 @@ struct  CPlayer_MovementServices_Humanoid {
 
 struct  CPlayer_ObserverServices {
     char m_pad[64];
-    char m_pad3_68[3];
     uint8 m_iObserverMode; 
+    char m_pad3_68[3];
     CHandle< C_BaseEntity > m_hObserverTarget; 
     ObserverMode_t m_iObserverLastMode; 
-    char m_pad3_80[3];
     bool m_bForcedObserverMode; 
+    char m_pad3_80[3];
     float32 m_flObserverChaseDistance; 
     GameTime_t m_flObserverChaseDistanceCalcTime; 
 };
@@ -637,8 +637,8 @@ struct  CPlayer_WeaponServices {
 struct  CBaseAnimGraphController {
     char m_pad[24];
     CAnimGraphNetworkedVariables m_animGraphNetworkedVars; // Size: 5264
-    char m_pad3_5292[3];
     bool m_bSequenceFinished; 
+    char m_pad3_5292[3];
     float32 m_flSoundSyncTime; 
     uint32 m_nActiveIKChainMask; 
     HSequence m_hSequence; 
@@ -649,8 +649,8 @@ struct  CBaseAnimGraphController {
     SequenceFinishNotifyState_t m_nNotifyState; 
     bool m_bNetworkedAnimationInputsChanged; 
     bool m_bNetworkedSequenceChanged; 
-    char m_pad3_5336[3];
     bool m_bLastUpdateSkipped; 
+    char m_pad3_5336[3];
     GameTime_t m_flPrevAnimUpdateTime; 
 };
 
@@ -671,20 +671,20 @@ struct __declspec(align(8))  C_BaseModelEntity {
     CHitboxComponent m_CHitboxComponent; // Size: 40
     HitGroup_t m_LastHitGroup; // Size: 40
     bool m_bInitModelEffects; 
-    char m_pad2_2732[2];
     bool m_bIsStaticProp; 
+    char m_pad2_2732[2];
     int32 m_nLastAddDecal; 
     int32 m_nDecalsAdded; 
     int32 m_iOldHealth; 
     RenderMode_t m_nRenderMode; 
     RenderFx_t m_nRenderFX; 
-    char m_pad29_2776[29];
     bool m_bAllowFadeInView; // Size: 30
+    char m_pad29_2776[29];
     Color m_clrRender; // Size: 8
     C_UtlVectorEmbeddedNetworkVar< EntityRenderAttribute_t > m_vecRenderAttributes; // Size: 104
     bool m_bRenderToCubemaps; 
-    char m_pad6_2896[6];
     bool m_bNoInterpolate; 
+    char m_pad6_2896[6];
     CCollisionProperty m_Collision; // Size: 176
     CGlowProperty m_Glow; // Size: 88
     float32 m_flGlowBackfaceMult; 
@@ -692,14 +692,14 @@ struct __declspec(align(8))  C_BaseModelEntity {
     float32 m_fadeMaxDist; 
     float32 m_flFadeScale; 
     float32 m_flShadowStrength; 
-    char m_pad3_3184[3];
     uint8 m_nObjectCulling; 
+    char m_pad3_3184[3];
     int32 m_nAddDecal; 
     Vector m_vDecalPosition; // Size: 12
     Vector m_vDecalForwardAxis; // Size: 12
     float32 m_flDecalHealBloodRate; 
-    char m_pad4_3224[4];
     float32 m_flDecalHealHeightRate; // Size: 8
+    char m_pad4_3224[4];
     C_NetworkUtlVectorBase< CHandle< C_BaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; // Size: 24
     CNetworkViewOffsetVector m_vecViewOffset; // Size: 48
     CClientAlphaProperty* m_pClientAlphaProperty; // Size: 8
@@ -744,8 +744,8 @@ struct  CNetworkedSequenceOperation {
     float32 m_flCycle; 
     CNetworkedQuantizedFloat m_flWeight; // Size: 8
     bool m_bSequenceChangeNetworked; 
-    char m_pad2_32[2];
     bool m_bDiscontinuity; 
+    char m_pad2_32[2];
     float32 m_flPrevCycleFromDiscontinuity; 
     float32 m_flPrevCycleForAnimEventDetection; 
 };
@@ -754,10 +754,10 @@ struct  CModelState {
     char m_pad[160];
     CStrongHandle< InfoForResourceTypeCModel > m_hModel; // Size: 8
     CUtlSymbolLarge m_ModelName; // Size: 64
-    char m_pad175_408[175];
     bool m_bClientClothCreationSuppressed; // Size: 176
-    char m_pad122_538[122];
+    char m_pad175_408[175];
     uint64 m_MeshGroupMask; // Size: 130
+    char m_pad122_538[122];
     int8 m_nIdealMotionType; 
     int8 m_nForceLOD; 
     int8 m_nClothUpdateFlags; 
@@ -847,25 +847,25 @@ struct  CCollisionProperty {
 
 struct __declspec(align(8))  CBasePlayerController {
     char m_pad[1392];
-    char m_pad4_1400[4];
     int32 m_nFinalPredictedTick; // Size: 8
+    char m_pad4_1400[4];
     C_CommandContext m_CommandContext; // Size: 168
     uint64 m_nInButtonsWhichAreToggles; // Size: 8
     uint32 m_nTickBase; 
     CHandle< C_BasePlayerPawn > m_hPawn; 
-    char m_pad3_1588[3];
     bool m_bKnownTeamMismatch; 
+    char m_pad3_1588[3];
     CHandle< C_BasePlayerPawn > m_hPredictedPawn; 
     CSplitScreenSlot m_nSplitScreenSlot; 
     CHandle< CBasePlayerController > m_hSplitOwner; 
     CUtlVector< CHandle< CBasePlayerController > > m_hSplitScreenPlayers; // Size: 24
-    char m_pad3_1628[3];
     bool m_bIsHLTV; 
+    char m_pad3_1628[3];
     PlayerConnectedState m_iConnected; 
     char[128] m_iszPlayerName; // Size: 136
     uint64 m_steamID; // Size: 8
-    char m_pad3_1780[3];
     bool m_bIsLocalPlayerController; 
+    char m_pad3_1780[3];
     uint32 m_iDesiredFOV; 
 };
 
@@ -893,8 +893,8 @@ struct  C_EnvWindShared {
     float32 m_flMinGustDelay; 
     float32 m_flMaxGustDelay; 
     float32 m_flGustDuration; 
-    char m_pad2_44[2];
     uint16 m_iGustDirChange; 
+    char m_pad2_44[2];
     Vector m_location; // Size: 12
     int32 m_iszGustSound; 
     int32 m_iWindDir; 
@@ -902,16 +902,16 @@ struct  C_EnvWindShared {
     Vector m_currentWindVector; // Size: 12
     Vector m_CurrentSwayVector; // Size: 12
     Vector m_PrevSwayVector; // Size: 12
-    char m_pad2_108[2];
     uint16 m_iInitialWindDir; 
+    char m_pad2_108[2];
     float32 m_flInitialWindSpeed; 
     GameTime_t m_flVariationTime; 
     GameTime_t m_flSwayTime; 
     GameTime_t m_flSimTime; 
     GameTime_t m_flSwitchTime; 
     float32 m_flAveWindSpeed; 
-    char m_pad3_136[3];
     bool m_bGusting; 
+    char m_pad3_136[3];
     float32 m_flWindAngleVariation; 
     float32 m_flWindSpeedVariation; 
     CHandle< C_BaseEntity > m_hEntOwner; 
@@ -933,22 +933,22 @@ struct  CProjectedTextureBase {
     char m_pad[12];
     CHandle< C_BaseEntity > m_hTargetEntity; 
     bool m_bState; 
-    char m_pad2_20[2];
     bool m_bAlwaysUpdate; 
+    char m_pad2_20[2];
     float32 m_flLightFOV; 
     bool m_bEnableShadows; 
     bool m_bSimpleProjection; 
     bool m_bLightOnlyTarget; 
     bool m_bLightWorld; 
-    char m_pad3_32[3];
     bool m_bCameraSpace; 
+    char m_pad3_32[3];
     float32 m_flBrightnessScale; 
     Color m_LightColor; 
     float32 m_flIntensity; 
     float32 m_flLinearAttenuation; 
     float32 m_flQuadraticAttenuation; 
-    char m_pad3_56[3];
     bool m_bVolumetric; 
+    char m_pad3_56[3];
     float32 m_flVolumetricIntensity; 
     float32 m_flNoiseStrength; 
     float32 m_flFlashlightTime; 
@@ -997,12 +997,12 @@ struct __declspec(align(8))  C_FireSmoke {
     float32 m_flScaleEnd; 
     GameTime_t m_flScaleTimeStart; 
     GameTime_t m_flScaleTimeEnd; 
-    char m_pad16_1448[16];
     float32 m_flChildFlameSpread; // Size: 20
+    char m_pad16_1448[16];
     float32 m_flClipPerc; 
     bool m_bClipTested; 
-    char m_pad2_1456[2];
     bool m_bFadingOut; 
+    char m_pad2_1456[2];
     TimedEvent m_tParticleSpawn; // Size: 8
     CFireOverlay* m_pFireOverlay; 
 };
@@ -1011,32 +1011,32 @@ struct __declspec(align(8))  C_RopeKeyframe {
     char m_pad[3376];
     CBitVec< 10 > m_LinksTouchingSomething; 
     int32 m_nLinksTouchingSomething; 
-    char m_pad3_3388[3];
     bool m_bApplyWind; 
+    char m_pad3_3388[3];
     int32 m_fPrevLockedPoints; 
     int32 m_iForcePointMoveCounter; 
     bool[2] m_bPrevEndPointPos; 
     Vector[2] m_vPrevEndPointPos; // Size: 24
     float32 m_flCurScroll; 
     float32 m_flScrollSpeed; 
-    char m_pad6_3440[6];
     uint16 m_RopeFlags; // Size: 8
+    char m_pad6_3440[6];
     CStrongHandle< InfoForResourceTypeIMaterial2 > m_iRopeMaterialModelIndex; // Size: 632
     Vector[10] m_LightValues; // Size: 120
-    char m_pad3_4196[3];
     uint8 m_nSegments; 
+    char m_pad3_4196[3];
     CHandle< C_BaseEntity > m_hStartPoint; 
     CHandle< C_BaseEntity > m_hEndPoint; 
     AttachmentHandle_t m_iStartAttachment; 
     AttachmentHandle_t m_iEndAttachment; 
-    char m_pad1_4208[1];
     uint8 m_Subdiv; 
+    char m_pad1_4208[1];
     int16 m_RopeLength; 
     int16 m_Slack; 
     float32 m_TextureScale; 
     uint8 m_fLockedPoints; 
-    char m_pad2_4220[2];
     uint8 m_nChangeCount; 
+    char m_pad2_4220[2];
     float32 m_Width; 
     C_RopeKeyframe::CPhysicsDelegate m_PhysicsDelegate; // Size: 16
     CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterial; // Size: 8
@@ -1071,19 +1071,19 @@ struct __declspec(align(8))  C_TintController {
 
 struct  CFlashlightEffect {
     char m_pad[16];
-    char m_pad15_32[15];
     bool m_bIsOn; // Size: 16
-    char m_pad3_36[3];
+    char m_pad15_32[15];
     bool m_bMuzzleFlashEnabled; 
-    char m_pad8_48[8];
+    char m_pad3_36[3];
     float32 m_flMuzzleFlashBrightness; // Size: 12
+    char m_pad8_48[8];
     Quaternion m_quatMuzzleFlashOrientation; // Size: 16
     Vector m_vecMuzzleFlashOrigin; // Size: 12
     float32 m_flFov; 
     float32 m_flFarZ; 
     float32 m_flLinearAtten; 
-    char m_pad3_92[3];
     bool m_bCastsShadows; 
+    char m_pad3_92[3];
     float32 m_flCurrentPullBackDist; 
     CStrongHandle< InfoForResourceTypeCTextureBase > m_FlashlightTexture; // Size: 8
     CStrongHandle< InfoForResourceTypeCTextureBase > m_MuzzleFlashTexture; // Size: 8
@@ -1103,21 +1103,21 @@ struct  CGlowSprite {
     Vector m_vColor; // Size: 12
     char m_pad[12];
     float32 m_flHorzSize; 
-    char m_pad4_24[4];
     float32 m_flVertSize; // Size: 8
+    char m_pad4_24[4];
     CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterial; 
 };
 
 struct  CGlowOverlay {
     char m_pad[8];
     Vector m_vPos; // Size: 12
-    char m_pad3_24[3];
     bool m_bDirectional; 
+    char m_pad3_24[3];
     Vector m_vDirection; // Size: 12
-    char m_pad3_40[3];
     bool m_bInSky; 
-    char m_pad4_48[4];
+    char m_pad3_40[3];
     float32 m_skyObstructionScale; // Size: 8
+    char m_pad4_48[4];
     CGlowSprite[4] m_Sprites; // Size: 128
     int32 m_nSprites; 
     float32 m_flProxyRadius; 
@@ -1126,8 +1126,8 @@ struct  CGlowOverlay {
     bool m_bCacheGlowObstruction; 
     bool m_bCacheSkyObstruction; 
     int16 m_bActivated; 
-    char m_pad2_200[2];
     uint16 m_ListIndex; 
+    char m_pad2_200[2];
     int32 m_queryHandle; 
 };
 
@@ -1138,8 +1138,8 @@ struct __declspec(align(8))  C_SkyCamera {
     char m_pad[1384];
     sky3dparams_t m_skyboxData; // Size: 144
     CUtlStringToken m_skyboxSlotToken; 
-    char m_pad3_1536[3];
     bool m_bUseAngles; 
+    char m_pad3_1536[3];
     C_SkyCamera* m_pNext; 
 };
 
@@ -1151,11 +1151,11 @@ struct __declspec(align(8))  CSkyboxReference {
 
 struct  sky3dparams_t {
     char m_pad[8];
-    char m_pad2_12[2];
     int16 scale; 
+    char m_pad2_12[2];
     Vector origin; // Size: 12
-    char m_pad3_28[3];
     bool bClip3DSkyBoxNearToWorldFar; 
+    char m_pad3_28[3];
     float32 flClip3DSkyBoxNearToWorldFarOffset; 
     fogparams_t fog; // Size: 104
     WorldGroupId_t m_nWorldGroupID; 
@@ -1181,11 +1181,11 @@ struct  CDecalInfo {
     float32 m_flFadeStartTime; 
     float32 m_flFadeDuration; 
     int32 m_nVBSlot; 
-    char m_pad12_40[12];
     int32 m_nBoneIndex; // Size: 16
+    char m_pad12_40[12];
     Vector m_vPosition; // Size: 12
-    char m_pad8_64[8];
     float32 m_flBoundingRadiusSqr; // Size: 12
+    char m_pad8_64[8];
     CDecalInfo* m_pNext; // Size: 8
     CDecalInfo* m_pPrev; // Size: 136
     int32 m_nDecalMaterialIndex; 
@@ -1205,8 +1205,8 @@ struct  CEffectData {
     CUtlStringToken m_nSurfaceProp; 
     CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > m_nEffectIndex; // Size: 8
     uint32 m_nDamageType; 
-    char m_pad1_94[1];
     uint8 m_nPenetrate; 
+    char m_pad1_94[1];
     uint16 m_nMaterial; 
     uint16 m_nHitBox; 
     uint8 m_nColor; 
@@ -1240,8 +1240,8 @@ struct __declspec(align(8))  C_InfoLadderDismount {
 
 struct  shard_model_desc_t {
     char m_pad[8];
-    char m_pad4_16[4];
     int32 m_nModelID; // Size: 8
+    char m_pad4_16[4];
     CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterialBase; // Size: 8
     CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterialDamageOverlay; // Size: 8
     ShardSolid_t m_solid; 
@@ -1252,8 +1252,8 @@ struct  shard_model_desc_t {
     C_NetworkUtlVectorBase< Vector4D > m_vInitialPanelVertices; // Size: 24
     float32 m_flGlassHalfThickness; 
     bool m_bHasParent; 
-    char m_pad2_120[2];
     bool m_bParentFrozen; 
+    char m_pad2_120[2];
     CUtlStringToken m_SurfacePropStringToken; 
 };
 
@@ -1276,8 +1276,8 @@ struct  CGlowProperty {
     int32 m_nGlowRange; 
     int32 m_nGlowRangeMin; 
     Color m_glowColorOverride; 
-    char m_pad3_72[3];
     bool m_bFlashing; 
+    char m_pad3_72[3];
     float32 m_flGlowTime; 
     float32 m_flGlowStartTime; 
     bool m_bEligibleForScreenHighlight; 
@@ -1328,23 +1328,23 @@ struct  C_TeamplayRules {
 
 struct __declspec(align(8))  C_TeamRoundTimer {
     char m_pad[1384];
-    char m_pad3_1388[3];
     bool m_bTimerPaused; 
+    char m_pad3_1388[3];
     float32 m_flTimeRemaining; 
     GameTime_t m_flTimerEndTime; 
     bool m_bIsDisabled; 
-    char m_pad2_1400[2];
     bool m_bShowInHUD; 
+    char m_pad2_1400[2];
     int32 m_nTimerLength; 
     int32 m_nTimerInitialLength; 
     int32 m_nTimerMaxLength; 
-    char m_pad3_1416[3];
     bool m_bAutoCountdown; 
+    char m_pad3_1416[3];
     int32 m_nSetupTimeLength; 
     int32 m_nState; 
     bool m_bStartPaused; 
-    char m_pad2_1428[2];
     bool m_bInCaptureWatchState; 
+    char m_pad2_1428[2];
     float32 m_flTotalTime; 
     bool m_bStopWatchTimer; 
     bool m_bFireFinished; 
@@ -1359,8 +1359,8 @@ struct __declspec(align(8))  C_TeamRoundTimer {
     bool m_bFire4SecRemain; 
     bool m_bFire3SecRemain; 
     bool m_bFire2SecRemain; 
-    char m_pad2_1448[2];
     bool m_bFire1SecRemain; 
+    char m_pad2_1448[2];
     int32 m_nOldTimerLength; 
     int32 m_nOldTimerState; 
 };
@@ -1370,8 +1370,8 @@ struct __declspec(align(8))  C_PortraitWorldCallbackHandler {
 
 struct  CEconItemAttribute {
     char m_pad[48];
-    char m_pad2_52[2];
     uint16 m_iAttributeDefinitionIndex; 
+    char m_pad2_52[2];
     float32 m_flValue; 
     float32 m_flInitialValue; 
     int32 m_nRefundableCurrency; 
@@ -1383,8 +1383,8 @@ struct  CAttributeManager {
     CUtlVector< CHandle< C_BaseEntity > > m_Providers; // Size: 24
     int32 m_iReapplyProvisionParity; 
     CHandle< C_BaseEntity > m_hOuter; 
-    char m_pad3_44[3];
     bool m_bPreventLoopback; 
+    char m_pad3_44[3];
     attributeprovidertypes_t m_ProviderType; 
     CUtlVector< CAttributeManager::cached_attribute_float_t > m_CachedResults; 
 };
@@ -1396,8 +1396,8 @@ struct  CAttributeList {
 };
 
 struct  CAttributeManager::cached_attribute_float_t {
-    char m_pad4_8[4];
     float32 flIn; // Size: 8
+    char m_pad4_8[4];
     char m_pad[8];
     CUtlSymbolLarge iAttribHook; // Size: 8
     float32 flOut; 
@@ -1406,23 +1406,23 @@ struct  CAttributeManager::cached_attribute_float_t {
 struct  C_EconItemView {
     char m_pad[96];
     bool m_bInventoryImageRgbaRequested; 
-    char m_pad30_128[30];
     bool m_bInventoryImageTriedCache; // Size: 31
+    char m_pad30_128[30];
     int32 m_nInventoryImageRgbaWidth; 
     int32 m_nInventoryImageRgbaHeight; 
     char[260] m_szCurrentLoadCachedFileName; // Size: 304
-    char m_pad1_442[1];
     bool m_bRestoreCustomMaterialAfterPrecache; 
+    char m_pad1_442[1];
     uint16 m_iItemDefinitionIndex; 
     int32 m_iEntityQuality; 
-    char m_pad4_456[4];
     uint32 m_iEntityLevel; // Size: 8
+    char m_pad4_456[4];
     uint64 m_iItemID; // Size: 8
     uint32 m_iItemIDHigh; 
     uint32 m_iItemIDLow; 
     uint32 m_iAccountID; 
-    char m_pad8_488[8];
     uint32 m_iInventoryPosition; // Size: 12
+    char m_pad8_488[8];
     bool m_bInitialized; 
     bool m_bDisallowSOC; 
     bool m_bIsStoreItem; 
@@ -1432,8 +1432,8 @@ struct  C_EconItemView {
     int32 m_iQualityOverride; 
     int32 m_iOriginOverride; 
     uint8 m_unClientFlags; 
-    char m_pad18_528[18];
     uint8 m_unOverrideStyle; // Size: 19
+    char m_pad18_528[18];
     CAttributeList m_AttributeList; // Size: 96
     CAttributeList m_NetworkedDynamicAttributes; // Size: 96
     char[161] m_szCustomName; // Size: 161
@@ -1444,8 +1444,8 @@ struct  C_EconItemView {
 struct  C_AttributeContainer {
     char m_pad[80];
     C_EconItemView m_Item; // Size: 1096
-    char m_pad4_1184[4];
     int32 m_iExternalItemProviderRegisteredToken; // Size: 8
+    char m_pad4_1184[4];
     uint64 m_ullRegisteredAsItemID; 
 };
 
@@ -1455,35 +1455,35 @@ struct  C_EconEntity::AttachedModelData_t {
 
 struct  EntitySpottedState_t {
     char m_pad[8];
-    char m_pad3_12[3];
     bool m_bSpotted; 
+    char m_pad3_12[3];
     uint32[2] m_bSpottedByMask; 
 };
 
 struct  C_CSGameRules {
     char m_pad[64];
     bool m_bFreezePeriod; 
-    char m_pad2_68[2];
     bool m_bWarmupPeriod; 
+    char m_pad2_68[2];
     GameTime_t m_fWarmupPeriodEnd; 
     GameTime_t m_fWarmupPeriodStart; 
     bool m_bServerPaused; 
     bool m_bTerroristTimeOutActive; 
-    char m_pad1_80[1];
     bool m_bCTTimeOutActive; 
+    char m_pad1_80[1];
     float32 m_flTerroristTimeOutRemaining; 
     float32 m_flCTTimeOutRemaining; 
     int32 m_nTerroristTimeOuts; 
     int32 m_nCTTimeOuts; 
     bool m_bTechnicalTimeOut; 
-    char m_pad2_100[2];
     bool m_bMatchWaitingForResume; 
+    char m_pad2_100[2];
     int32 m_iRoundTime; 
     float32 m_fMatchStartTime; 
     GameTime_t m_fRoundStartTime; 
     GameTime_t m_flRestartRoundTime; 
-    char m_pad3_120[3];
     bool m_bGameRestart; 
+    char m_pad3_120[3];
     float32 m_flGameStartTime; 
     float32 m_timeUntilNextPhaseStarts; 
     int32 m_gamePhase; 
@@ -1495,17 +1495,17 @@ struct  C_CSGameRules {
     bool m_bMapHasBombTarget; 
     bool m_bMapHasRescueZone; 
     bool m_bMapHasBuyZone; 
-    char m_pad3_156[3];
     bool m_bIsQueuedMatchmaking; 
+    char m_pad3_156[3];
     int32 m_nQueuedMatchmakingMode; 
     bool m_bIsValveDS; 
     bool m_bLogoMap; 
-    char m_pad1_164[1];
     bool m_bPlayAllStepSoundsOnServer; 
+    char m_pad1_164[1];
     int32 m_iSpectatorSlotCount; 
     int32 m_MatchDevice; 
-    char m_pad3_176[3];
     bool m_bHasMatchStarted; 
+    char m_pad3_176[3];
     int32 m_nNextMapInMapgroup; 
     char[512] m_szTournamentEventName; // Size: 512
     char[512] m_szTournamentEventStage; // Size: 512
@@ -1516,20 +1516,20 @@ struct  C_CSGameRules {
     GameTime_t m_flCMMItemDropRevealEndTime; 
     bool m_bIsDroppingItems; 
     bool m_bIsQuestEligible; 
-    char m_pad1_2244[1];
     bool m_bIsHltvActive; 
+    char m_pad1_2244[1];
     uint16[100] m_arrProhibitedItemIndices; // Size: 200
     uint32[4] m_arrTournamentActiveCasterAccounts; // Size: 16
     int32 m_numBestOfMaps; 
     int32 m_nHalloweenMaskListSeed; 
     bool m_bBombDropped; 
-    char m_pad2_2472[2];
     bool m_bBombPlanted; 
+    char m_pad2_2472[2];
     int32 m_iRoundWinStatus; 
     int32 m_eRoundWinReason; 
     bool m_bTCantBuy; 
-    char m_pad2_2484[2];
     bool m_bCTCantBuy; 
+    char m_pad2_2484[2];
     int32[30] m_iMatchStats_RoundResults; // Size: 120
     int32[30] m_iMatchStats_PlayersAlive_CT; // Size: 120
     int32[30] m_iMatchStats_PlayersAlive_T; // Size: 120
@@ -1539,32 +1539,32 @@ struct  C_CSGameRules {
     Vector m_vMinimapMins; // Size: 12
     Vector m_vMinimapMaxs; // Size: 12
     float32[8] m_MinimapVerticalSectionHeights; // Size: 32
-    char m_pad3_3164[3];
     bool m_bSpawnedTerrorHuntHeavy; 
+    char m_pad3_3164[3];
     int32[10] m_nEndMatchMapGroupVoteTypes; // Size: 40
     int32[10] m_nEndMatchMapGroupVoteOptions; // Size: 40
     int32 m_nEndMatchMapVoteWinner; 
     int32 m_iNumConsecutiveCTLoses; 
-    char m_pad24_3280[24];
     int32 m_iNumConsecutiveTerroristLoses; // Size: 28
-    char m_pad167_3448[167];
+    char m_pad24_3280[24];
     bool m_bMarkClientStopRecordAtRoundEnd; // Size: 168
+    char m_pad167_3448[167];
     int32 m_nMatchAbortedEarlyReason; 
     bool m_bHasTriggeredRoundStartMusic; 
-    char m_pad26_3480[26];
     bool m_bSwitchingTeamsAtRoundReset; // Size: 27
+    char m_pad26_3480[26];
     CCSGameModeRules* m_pGameModeRules; // Size: 8
     C_RetakeGameRules m_RetakeRules; // Size: 280
-    char m_pad3_3772[3];
     uint8 m_nMatchEndCount; 
+    char m_pad3_3772[3];
     int32 m_nTTeamIntroVariant; 
     int32 m_nCTTeamIntroVariant; 
-    char m_pad3_3784[3];
     bool m_bTeamIntroPeriod; 
+    char m_pad3_3784[3];
     int32 m_iRoundEndWinnerTeam; 
     int32 m_eRoundEndReason; 
-    char m_pad3_3796[3];
     bool m_bRoundEndShowTimerDefend; 
+    char m_pad3_3796[3];
     int32 m_iRoundEndTimerTime; 
     CUtlString m_sRoundEndFunFactToken; // Size: 8
     CPlayerSlot m_iRoundEndFunFactPlayerSlot; 
@@ -1573,14 +1573,14 @@ struct  C_CSGameRules {
     int32 m_iRoundEndFunFactData3; 
     CUtlString m_sRoundEndMessage; // Size: 8
     int32 m_iRoundEndPlayerCount; 
-    char m_pad3_3840[3];
     bool m_bRoundEndNoMusic; 
+    char m_pad3_3840[3];
     int32 m_iRoundEndLegacy; 
-    char m_pad3_3848[3];
     uint8 m_nRoundEndCount; 
+    char m_pad3_3848[3];
     int32 m_iRoundStartRoundNumber; 
-    char m_pad16395_20248[16395];
     uint8 m_nRoundStartCount; // Size: 16396
+    char m_pad16395_20248[16395];
     float64 m_flLastPerfSampleTime; 
 };
 
@@ -1598,8 +1598,8 @@ struct  C_RetakeGameRules {
     char m_pad[248];
     int32 m_nMatchSeed; 
     bool m_bBlockersPresent; 
-    char m_pad2_256[2];
     bool m_bRoundInProgress; 
+    char m_pad2_256[2];
     int32 m_iFirstSecondHalfRound; 
     int32 m_iBombSite; 
 };
@@ -1649,8 +1649,8 @@ struct  C_CSGO_TeamPreviewCharacterPosition {
     char m_pad[1384];
     int32 m_nVariant; 
     int32 m_nRandom; 
-    char m_pad4_1400[4];
     int32 m_nOrdinal; // Size: 8
+    char m_pad4_1400[4];
     CUtlString m_sWeaponName; // Size: 8
     uint64 m_xuid; // Size: 8
     C_EconItemView m_agentItem; // Size: 1096
@@ -1735,8 +1735,8 @@ struct __declspec(align(16))  C_CSPlayerPawn {
     CCSPlayer_DamageReactServices* m_pDamageReactServices; // Size: 8
     GameTime_t m_flHealthShotBoostExpirationTime; 
     GameTime_t m_flLastFiredWeaponTime; 
-    char m_pad3_5460[3];
     bool m_bHasFemaleVoice; 
+    char m_pad3_5460[3];
     float32 m_flLandingTimeSeconds; 
     float32 m_flOldFallVelocity; 
     char[18] m_szLastPlaceName; // Size: 18
@@ -1747,52 +1747,52 @@ struct __declspec(align(16))  C_CSPlayerPawn {
     uint32 m_unPreviousWeaponHash; 
     uint32 m_unWeaponHash; 
     bool m_bInBuyZone; 
-    char m_pad2_5508[2];
     bool m_bPreviouslyInBuyZone; 
+    char m_pad2_5508[2];
     QAngle m_aimPunchAngle; // Size: 12
     QAngle m_aimPunchAngleVel; // Size: 12
     int32 m_aimPunchTickBase; 
-    char m_pad4_5544[4];
     float32 m_aimPunchTickFraction; // Size: 8
+    char m_pad4_5544[4];
     CUtlVector< QAngle > m_aimPunchCache; // Size: 32
-    char m_pad3_5580[3];
     bool m_bInLanding; 
+    char m_pad3_5580[3];
     float32 m_flLandingStartTime; 
     bool m_bInHostageRescueZone; 
     bool m_bInBombZone; 
-    char m_pad1_5588[1];
     bool m_bIsBuyMenuOpen; 
+    char m_pad1_5588[1];
     GameTime_t m_flTimeOfLastInjury; 
     GameTime_t m_flNextSprayDecalTime; // Size: 312
     int32 m_iRetakesOffering; 
     int32 m_iRetakesOfferingCard; 
     bool m_bRetakesHasDefuseKit; 
-    char m_pad2_5916[2];
     bool m_bRetakesMVPLastRound; 
+    char m_pad2_5916[2];
     int32 m_iRetakesMVPBoostItem; 
     loadout_slot_t m_RetakesMVPBoostExtraUtility; // Size: 32
-    char m_pad7_5960[7];
     bool m_bNeedToReApplyGloves; // Size: 8
+    char m_pad7_5960[7];
     C_EconItemView m_EconGloves; // Size: 1096
     uint8 m_nEconGlovesChanged; 
-    char m_pad2_7060[2];
     bool m_bMustSyncRagdollState; 
+    char m_pad2_7060[2];
     int32 m_nRagdollDamageBone; 
     Vector m_vRagdollDamageForce; // Size: 12
     Vector m_vRagdollDamagePosition; // Size: 12
     char[64] m_szRagdollDamageWeaponName; // Size: 64
-    char m_pad3_7156[3];
     bool m_bRagdollDamageHeadshot; 
+    char m_pad3_7156[3];
     Vector m_vRagdollServerOrigin; // Size: 1668
-    char m_pad3_8828[3];
     bool m_bLastHeadBoneTransformIsValid; 
+    char m_pad3_8828[3];
     GameTime_t m_lastLandTime; 
-    char m_pad27_8860[27];
     bool m_bOnGroundLastTick; // Size: 28
+    char m_pad27_8860[27];
     QAngle m_qDeathEyeAngles; // Size: 12
     bool m_bSkipOneHeadConstraintUpdate; 
-    char m_pad2_8876[2];
     bool m_bLeftHanded; 
+    char m_pad2_8876[2];
     GameTime_t m_fSwitchedHandednessTime; 
     float32 m_flViewmodelOffsetX; 
     float32 m_flViewmodelOffsetY; 
@@ -1801,13 +1801,13 @@ struct __declspec(align(16))  C_CSPlayerPawn {
     uint32[5] m_vecPlayerPatchEconIndices; // Size: 56
     Color m_GunGameImmunityColor; // Size: 80
     CUtlVector< C_BulletHitModel* > m_vecBulletHitModels; // Size: 24
-    char m_pad7_9064[7];
     bool m_bIsWalking; // Size: 8
+    char m_pad7_9064[7];
     QAngle m_thirdPersonHeading; // Size: 24
-    char m_pad12_9104[12];
     float32 m_flSlopeDropOffset; // Size: 16
-    char m_pad12_9120[12];
+    char m_pad12_9104[12];
     float32 m_flSlopeDropHeight; // Size: 16
+    char m_pad12_9120[12];
     Vector m_vHeadConstraintOffset; // Size: 24
     EntitySpottedState_t m_entitySpottedState; // Size: 24
     bool m_bIsScoped; 
@@ -1816,34 +1816,34 @@ struct __declspec(align(16))  C_CSPlayerPawn {
     bool m_bIsGrabbingHostage; 
     CSPlayerBlockingUseAction_t m_iBlockingUseActionInProgress; 
     GameTime_t m_flEmitSoundTime; 
-    char m_pad3_9184[3];
     bool m_bInNoDefuseArea; 
+    char m_pad3_9184[3];
     int32 m_nWhichBombZone; 
     int32 m_iShotsFired; 
     float32 m_flFlinchStack; 
     float32 m_flVelocityModifier; 
     float32 m_flHitHeading; 
     int32 m_nHitBodyPart; 
-    char m_pad3_9212[3];
     bool m_bWaitForNoAttack; 
-    char m_pad1_9217[1];
+    char m_pad3_9212[3];
     float32 m_ignoreLadderJumpTime; 
-    char m_pad2_9220[2];
+    char m_pad1_9217[1];
     bool m_bKilledByHeadshot; 
+    char m_pad2_9220[2];
     int32 m_ArmorValue; 
     uint16 m_unCurrentEquipmentValue; 
     uint16 m_unRoundStartEquipmentValue; 
-    char m_pad2_9232[2];
     uint16 m_unFreezetimeEndEquipmentValue; 
+    char m_pad2_9232[2];
     CEntityIndex m_nLastKillerIndex; 
     bool m_bOldIsScoped; 
-    char m_pad2_9240[2];
     bool m_bHasDeathInfo; 
+    char m_pad2_9240[2];
     float32 m_flDeathInfoTime; 
     Vector m_vecDeathInfoOrigin; // Size: 12
     GameTime_t m_grenadeParameterStashTime; 
-    char m_pad3_9264[3];
     bool m_bGrenadeParametersStashed; 
+    char m_pad3_9264[3];
     QAngle m_angStashedShootAngles; // Size: 12
     Vector m_vecStashedGrenadeThrowPosition; // Size: 12
     Vector m_vecStashedVelocity; // Size: 12
@@ -1913,8 +1913,8 @@ struct  WeaponPurchaseTracker_t {
 struct  CCSPlayer_ActionTrackingServices {
     char m_pad[64];
     CHandle< C_BasePlayerWeapon > m_hLastWeaponBeforeC4AutoSwitch; 
-    char m_pad3_72[3];
     bool m_bIsRescuing; 
+    char m_pad3_72[3];
     WeaponPurchaseTracker_t m_weaponPurchasesThisMatch; // Size: 88
     WeaponPurchaseTracker_t m_weaponPurchasesThisRound; 
 };
@@ -1926,12 +1926,12 @@ struct  CCSPlayer_BulletServices {
 
 struct  SellbackPurchaseEntry_t {
     char m_pad[48];
-    char m_pad2_52[2];
     uint16 m_unDefIdx; 
+    char m_pad2_52[2];
     int32 m_nCost; 
     int32 m_nPrevArmor; 
-    char m_pad3_64[3];
     bool m_bPrevHelmet; 
+    char m_pad3_64[3];
     CEntityHandle m_hItem; 
 };
 
@@ -1942,8 +1942,8 @@ struct  CCSPlayer_BuyServices {
 
 struct  CCSPlayer_CameraServices {
     char m_pad[552];
-    char m_pad4_560[4];
     float32 m_flDeathCamTilt; // Size: 8
+    char m_pad4_560[4];
     Vector m_vClientScopeInaccuracy; 
 };
 
@@ -1968,24 +1968,24 @@ struct  CCSPlayer_MovementServices {
     float32 m_flDuckAmount; 
     float32 m_flDuckSpeed; 
     bool m_bDuckOverride; 
-    char m_pad2_568[2];
     bool m_bDesiresDuck; 
+    char m_pad2_568[2];
     float32 m_flDuckOffset; 
     uint32 m_nDuckTimeMsecs; 
     uint32 m_nDuckJumpTimeMsecs; 
     uint32 m_nJumpTimeMsecs; 
-    char m_pad12_600[12];
     float32 m_flLastDuckTime; // Size: 16
+    char m_pad12_600[12];
     Vector2D m_vecLastPositionAtFullCrouchSpeed; // Size: 8
     bool m_duckUntilOnGround; 
     bool m_bHasWalkMovedSinceLastJump; 
-    char m_pad13_624[13];
     bool m_bInStuckTest; // Size: 14
+    char m_pad13_624[13];
     float32[64][2] m_flStuckCheckTime; // Size: 512
     int32 m_nTraceCount; 
     int32 m_StuckLast; 
-    char m_pad3_1148[3];
     bool m_bSpeedCropped; 
+    char m_pad3_1148[3];
     float32 m_flGroundMoveEfficiency; 
     int32 m_nOldWaterLevel; 
     float32 m_flWaterEntryTime; 
@@ -1993,8 +1993,8 @@ struct  CCSPlayer_MovementServices {
     Vector m_vecLeft; // Size: 12
     Vector m_vecUp; // Size: 12
     int32 m_nGameCodeHasMovedPlayerAfterCommand; 
-    char m_pad3_1204[3];
     bool m_bOldJumpPressed; 
+    char m_pad3_1204[3];
     float32 m_flJumpPressedTime; 
     float32 m_flJumpUntil; 
     float32 m_flJumpVel; 
@@ -2047,10 +2047,10 @@ struct  CCSPlayer_WeaponServices {
     char m_pad[184];
     GameTime_t m_flNextAttack; 
     bool m_bIsLookingAtWeapon; 
-    char m_pad2_192[2];
     bool m_bIsHoldingLookAtWeapon; 
-    char m_pad916_1112[916];
+    char m_pad2_192[2];
     uint32 m_nOldShootPositionHistoryCount; // Size: 920
+    char m_pad916_1112[916];
     uint32 m_nOldInputHistoryCount; 
 };
 
@@ -2059,8 +2059,8 @@ struct  CCSObserver_ObserverServices {
     CEntityHandle m_hLastObserverTarget; 
     Vector m_vecObserverInterpolateOffset; // Size: 12
     Vector m_vecObserverInterpStartPos; // Size: 12
-    char m_pad8_128[8];
     float32 m_flObsInterp_PathLength; // Size: 12
+    char m_pad8_128[8];
     Quaternion m_qObsInterp_OrientationStart; // Size: 16
     Quaternion m_qObsInterp_OrientationTravelDir; // Size: 16
     ObserverInterpState_t m_obsInterpState; 
@@ -2095,35 +2095,35 @@ struct __declspec(align(8))  CCSPlayerController {
     CCSPlayerController_ActionTrackingServices* m_pActionTrackingServices; // Size: 8
     CCSPlayerController_DamageServices* m_pDamageServices; // Size: 8
     uint32 m_iPing; 
-    char m_pad3_1864[3];
     bool m_bHasCommunicationAbuseMute; 
+    char m_pad3_1864[3];
     CUtlSymbolLarge m_szCrosshairCodes; // Size: 8
-    char m_pad3_1876[3];
     uint8 m_iPendingTeamNum; 
+    char m_pad3_1876[3];
     GameTime_t m_flForceTeamTime; 
     int32 m_iCompTeammateColor; 
-    char m_pad3_1888[3];
     bool m_bEverPlayedOnTeam; 
+    char m_pad3_1888[3];
     GameTime_t m_flPreviousForceJoinTeamTime; // Size: 8
     CUtlSymbolLarge m_szClan; // Size: 8
     CUtlString m_sSanitizedPlayerName; // Size: 8
-    char m_pad4_1920[4];
     int32 m_iCoachingTeam; // Size: 8
+    char m_pad4_1920[4];
     uint64 m_nPlayerDominated; // Size: 8
     uint64 m_nPlayerDominatingMe; // Size: 8
     int32 m_iCompetitiveRanking; 
     int32 m_iCompetitiveWins; 
-    char m_pad3_1948[3];
     int8 m_iCompetitiveRankType; 
+    char m_pad3_1948[3];
     int32 m_iCompetitiveRankingPredicted_Win; 
     int32 m_iCompetitiveRankingPredicted_Loss; 
     int32 m_iCompetitiveRankingPredicted_Tie; 
     int32 m_nEndMatchNextMapVote; 
-    char m_pad2_1968[2];
     uint16 m_unActiveQuestId; 
+    char m_pad2_1968[2];
     QuestProgress::Reason m_nQuestProgressReason; 
-    char m_pad40_2016[40];
     uint32 m_unPlayerTvControlFlags; // Size: 44
+    char m_pad40_2016[40];
     int32 m_iDraftIndex; 
     uint32 m_msQueuedModeDisconnectionTimestamp; 
     uint32 m_uiAbandonRecordedReason; 
@@ -2132,21 +2132,21 @@ struct __declspec(align(8))  CCSPlayerController {
     bool m_bAbandonAllowsSurrender; 
     bool m_bAbandonOffersInstantSurrender; 
     bool m_bDisconnection1MinWarningPrinted; 
-    char m_pad2_2036[2];
     bool m_bScoreReported; 
-    char m_pad8_2048[8];
+    char m_pad2_2036[2];
     int32 m_nDisconnectionTick; // Size: 12
+    char m_pad8_2048[8];
     bool m_bControllingBot; 
     bool m_bHasControlledBotThisRound; 
-    char m_pad1_2052[1];
     bool m_bHasBeenControlledByPlayerThisRound; 
+    char m_pad1_2052[1];
     int32 m_nBotsControlledThisRound; 
-    char m_pad3_2060[3];
     bool m_bCanControlObservedBot; 
+    char m_pad3_2060[3];
     CHandle< C_CSPlayerPawn > m_hPlayerPawn; 
     CHandle< C_CSObserverPawn > m_hObserverPawn; 
-    char m_pad3_2072[3];
     bool m_bPawnIsAlive; 
+    char m_pad3_2072[3];
     uint32 m_iPawnHealth; 
     int32 m_iPawnArmor; 
     bool m_bPawnHasDefuser; 
@@ -2158,8 +2158,8 @@ struct __declspec(align(8))  CCSPlayerController {
     CHandle< CCSPlayerController > m_hOriginalControllerOfCurrentPawn; 
     int32 m_iScore; 
     C_NetworkUtlVectorBase< EKillTypes_t > m_vecKills; // Size: 24
-    char m_pad3_2132[3];
     bool m_bMvpNoMusic; 
+    char m_pad3_2132[3];
     int32 m_eMvpReason; 
     int32 m_iMusicKitID; 
     int32 m_iMusicKitMVPs; 
@@ -2188,8 +2188,8 @@ struct  CDamageRecord {
 
 struct  CCSPlayerController_DamageServices {
     char m_pad[64];
-    char m_pad4_72[4];
     int32 m_nSendUpdate; // Size: 8
+    char m_pad4_72[4];
     C_UtlVectorEmbeddedNetworkVar< CDamageRecord > m_DamageList; 
 };
 
@@ -2210,8 +2210,8 @@ struct  ServerAuthoritativeWeaponSlot_t {
 
 struct  CCSPlayerController_InventoryServices {
     char m_pad[64];
-    char m_pad2_68[2];
     uint16 m_unMusicID; 
+    char m_pad2_68[2];
     MedalRank_t[6] m_rank; // Size: 24
     int32 m_nPersonaDataPublicLevel; 
     int32 m_nPersonaDataPublicCommendsLeader; 
@@ -2223,8 +2223,8 @@ struct  CCSPlayerController_InventoryServices {
 
 struct  C_IronSightController {
     char m_pad[16];
-    char m_pad3_20[3];
     bool m_bIronSightAvailable; 
+    char m_pad3_20[3];
     float32 m_flIronSightAmount; 
     float32 m_flIronSightAmountGained; 
     float32 m_flIronSightAmountBiased; 
@@ -2250,23 +2250,23 @@ struct __declspec(align(8))  CompositeMaterialMatchFilter_t {
 struct __declspec(align(8))  CompositeMaterialInputLooseVariable_t {
     CUtlString m_strName; // Size: 8
     char m_pad[8];
-    char m_pad7_16[7];
     bool m_bExposeExternally; // Size: 8
+    char m_pad7_16[7];
     CUtlString m_strExposedFriendlyName; // Size: 8
     CUtlString m_strExposedFriendlyGroupName; // Size: 8
-    char m_pad7_40[7];
     bool m_bExposedVariableIsFixedRange; // Size: 8
+    char m_pad7_40[7];
     CUtlString m_strExposedVisibleWhenTrue; // Size: 8
     CUtlString m_strExposedHiddenWhenTrue; // Size: 8
     CompositeMaterialInputLooseVariableType_t m_nVariableType; 
-    char m_pad3_64[3];
     bool m_bValueBoolean; 
+    char m_pad3_64[3];
     int32 m_nValueIntX; 
     int32 m_nValueIntY; 
     int32 m_nValueIntZ; 
     int32 m_nValueIntW; 
-    char m_pad3_84[3];
     bool m_bHasFloatBounds; 
+    char m_pad3_84[3];
     float32 m_flValueFloatX; 
     float32 m_flValueFloatX_Min; 
     float32 m_flValueFloatX_Max; 
@@ -2301,8 +2301,8 @@ struct __declspec(align(8))  CompMatMutatorCondition_t {
 };
 
 struct __declspec(align(8))  CompMatPropertyMutator_t {
-    char m_pad3_4[3];
     bool m_bEnabled; 
+    char m_pad3_4[3];
     char m_pad[4];
     CompMatPropertyMutatorType_t m_nMutatorCommandType; 
     CUtlString m_strInitWith_Container; // Size: 8
@@ -2321,8 +2321,8 @@ struct __declspec(align(8))  CompMatPropertyMutator_t {
     int32 m_nResolution; 
     bool m_bIsScratchTarget; 
     bool m_bSplatDebugInfo; 
-    char m_pad1_768[1];
     bool m_bCaptureInRenderDoc; 
+    char m_pad1_768[1];
     CUtlVector< CompMatPropertyMutator_t > m_vecTexGenInstructions; // Size: 24
     CUtlVector< CompMatPropertyMutator_t > m_vecConditionalMutators; // Size: 24
     CUtlString m_strPopInputQueue_Container; // Size: 8
@@ -2335,8 +2335,8 @@ struct __declspec(align(8))  CompMatPropertyMutator_t {
 };
 
 struct __declspec(align(8))  CompositeMaterialInputContainer_t {
-    char m_pad3_4[3];
     bool m_bEnabled; 
+    char m_pad3_4[3];
     char m_pad[4];
     CompositeMaterialInputContainerSourceType_t m_nCompositeMaterialInputContainerSourceType; 
     CResourceName m_strSpecificContainerMaterial; // Size: 224
@@ -2373,8 +2373,8 @@ struct __declspec(align(8))  CompositeMaterialEditorPoint_t {
     int32 m_nSequenceIndex; 
     float32 m_flCycle; 
     KeyValues3 m_KVModelStateChoices; // Size: 16
-    char m_pad7_256[7];
     bool m_bEnableChildModel; // Size: 8
+    char m_pad7_256[7];
     CResourceName m_ChildModelName; // Size: 224
     CUtlVector< CompositeMaterialAssemblyProcedure_t > m_vecCompositeMaterialAssemblyProcedures; // Size: 24
     CUtlVector< CompositeMaterial_t > m_vecCompositeMaterials; 
@@ -2382,16 +2382,16 @@ struct __declspec(align(8))  CompositeMaterialEditorPoint_t {
 
 struct __declspec(align(8))  CCompositeMaterialEditorDoc {
     char m_pad[8];
-    char m_pad4_16[4];
     int32 m_nVersion; // Size: 8
+    char m_pad4_16[4];
     CUtlVector< CompositeMaterialEditorPoint_t > m_Points; // Size: 24
     KeyValues3 m_KVthumbnail; 
 };
 
 struct  CGlobalLightBase {
     char m_pad[16];
-    char m_pad3_20[3];
     bool m_bSpotLight; 
+    char m_pad3_20[3];
     Vector m_SpotLightOrigin; // Size: 12
     QAngle m_SpotLightAngles; // Size: 12
     Vector m_ShadowDirection; // Size: 12
@@ -2413,21 +2413,21 @@ struct  CGlobalLightBase {
     float32 m_flFarZ; 
     bool m_bEnableShadows; 
     bool m_bOldEnableShadows; 
-    char m_pad1_144[1];
     bool m_bBackgroundClearNotRequired; 
+    char m_pad1_144[1];
     float32 m_flCloudScale; 
     float32 m_flCloud1Speed; 
     float32 m_flCloud1Direction; 
     float32 m_flCloud2Speed; 
-    char m_pad12_176[12];
     float32 m_flCloud2Direction; // Size: 16
+    char m_pad12_176[12];
     float32 m_flAmbientScale1; 
     float32 m_flAmbientScale2; 
     float32 m_flGroundScale; 
     float32 m_flLightScale; 
     float32 m_flFoWDarkness; 
-    char m_pad3_200[3];
     bool m_bEnableSeparateSkyboxFog; 
+    char m_pad3_200[3];
     Vector m_vFowColor; // Size: 12
     Vector m_ViewOrigin; // Size: 12
     QAngle m_ViewAngles; // Size: 12
@@ -2484,10 +2484,10 @@ struct __declspec(align(8))  C_CSGO_MapPreviewCameraPath {
     float32 m_flZNear; 
     bool m_bLoop; 
     bool m_bVerticalFOV; 
-    char m_pad1_1396[1];
     bool m_bConstantSpeed; 
-    char m_pad64_1464[64];
+    char m_pad1_1396[1];
     float32 m_flDuration; // Size: 68
+    char m_pad64_1464[64];
     float32 m_flPathLength; 
     float32 m_flPathDuration; 
 };
@@ -2533,8 +2533,8 @@ struct  CPlayerSprayDecalRenderHelper {
 struct  C_CSGO_TeamPreviewCamera {
     char m_pad[1488];
     int32 m_nVariant; 
-    char m_pad3_1496[3];
     bool m_bDofEnabled; 
+    char m_pad3_1496[3];
     float32 m_flDofNearBlurry; 
     float32 m_flDofNearCrisp; 
     float32 m_flDofFarCrisp; 
@@ -2595,21 +2595,21 @@ struct __declspec(align(8))  C_EnvCombinedLightProbeVolume {
     Color m_Entity_Color; 
     float32 m_Entity_flBrightness; 
     CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hCubemapTexture; // Size: 8
-    char m_pad7_5600[7];
     bool m_Entity_bCustomCubemapTexture; // Size: 8
+    char m_pad7_5600[7];
     CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeTexture; // Size: 8
     CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightIndicesTexture; // Size: 8
     CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightScalarsTexture; // Size: 8
     CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightShadowsTexture; // Size: 8
     Vector m_Entity_vBoxMins; // Size: 12
     Vector m_Entity_vBoxMaxs; // Size: 12
-    char m_pad3_5660[3];
     bool m_Entity_bMoveable; 
+    char m_pad3_5660[3];
     int32 m_Entity_nHandshake; 
     int32 m_Entity_nEnvCubeMapArrayIndex; 
     int32 m_Entity_nPriority; 
-    char m_pad3_5676[3];
     bool m_Entity_bStartDisabled; 
+    char m_pad3_5676[3];
     float32 m_Entity_flEdgeFadeDist; 
     Vector m_Entity_vEdgeFadeDists; // Size: 12
     int32 m_Entity_nLightProbeSizeX; 
@@ -2617,21 +2617,21 @@ struct __declspec(align(8))  C_EnvCombinedLightProbeVolume {
     int32 m_Entity_nLightProbeSizeZ; 
     int32 m_Entity_nLightProbeAtlasX; 
     int32 m_Entity_nLightProbeAtlasY; 
-    char m_pad21_5737[21];
     int32 m_Entity_nLightProbeAtlasZ; // Size: 25
+    char m_pad21_5737[21];
     bool m_Entity_bEnabled; 
 };
 
 struct __declspec(align(8))  C_EnvCubemap {
     char m_pad[1512];
     CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hCubemapTexture; // Size: 8
-    char m_pad3_1524[3];
     bool m_Entity_bCustomCubemapTexture; 
+    char m_pad3_1524[3];
     float32 m_Entity_flInfluenceRadius; 
     Vector m_Entity_vBoxProjectMins; // Size: 12
     Vector m_Entity_vBoxProjectMaxs; // Size: 12
-    char m_pad3_1556[3];
     bool m_Entity_bMoveable; 
+    char m_pad3_1556[3];
     int32 m_Entity_nHandshake; 
     int32 m_Entity_nEnvCubeMapArrayIndex; 
     int32 m_Entity_nPriority; 
@@ -2642,8 +2642,8 @@ struct __declspec(align(8))  C_EnvCubemap {
     bool m_Entity_bDefaultEnvMap; 
     bool m_Entity_bDefaultSpecEnvMap; 
     bool m_Entity_bIndoorCubeMap; 
-    char m_pad15_1608[15];
     bool m_Entity_bCopyDiffuseFromDefaultCubemap; // Size: 16
+    char m_pad15_1608[15];
     bool m_Entity_bEnabled; 
 };
 
@@ -2655,16 +2655,16 @@ struct __declspec(align(8))  C_EnvCubemapFog {
     float32 m_flEndDistance; 
     float32 m_flStartDistance; 
     float32 m_flFogFalloffExponent; 
-    char m_pad3_1400[3];
     bool m_bHeightFogEnabled; 
+    char m_pad3_1400[3];
     float32 m_flFogHeightWidth; 
     float32 m_flFogHeightEnd; 
     float32 m_flFogHeightStart; 
     float32 m_flFogHeightExponent; 
     float32 m_flLODBias; 
     bool m_bActive; 
-    char m_pad2_1424[2];
     bool m_bStartDisabled; 
+    char m_pad2_1424[2];
     float32 m_flFogMaxOpacity; 
     int32 m_nCubemapSourceType; 
     CStrongHandle< InfoForResourceTypeIMaterial2 > m_hSkyMaterial; // Size: 8
@@ -2679,8 +2679,8 @@ struct __declspec(align(8))  C_GradientFog {
     CStrongHandle< InfoForResourceTypeCTextureBase > m_hGradientFogTexture; // Size: 8
     float32 m_flFogStartDistance; 
     float32 m_flFogEndDistance; 
-    char m_pad3_1404[3];
     bool m_bHeightFogEnabled; 
+    char m_pad3_1404[3];
     float32 m_flFogStartHeight; 
     float32 m_flFogEndHeight; 
     float32 m_flFarZ; 
@@ -2703,19 +2703,19 @@ struct __declspec(align(8))  C_EnvLightProbeVolume {
     CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightShadowsTexture; // Size: 8
     Vector m_Entity_vBoxMins; // Size: 12
     Vector m_Entity_vBoxMaxs; // Size: 12
-    char m_pad3_5508[3];
     bool m_Entity_bMoveable; 
+    char m_pad3_5508[3];
     int32 m_Entity_nHandshake; 
     int32 m_Entity_nPriority; 
-    char m_pad3_5520[3];
     bool m_Entity_bStartDisabled; 
+    char m_pad3_5520[3];
     int32 m_Entity_nLightProbeSizeX; 
     int32 m_Entity_nLightProbeSizeY; 
     int32 m_Entity_nLightProbeSizeZ; 
     int32 m_Entity_nLightProbeAtlasX; 
     int32 m_Entity_nLightProbeAtlasY; 
-    char m_pad9_5553[9];
     int32 m_Entity_nLightProbeAtlasZ; // Size: 13
+    char m_pad9_5553[9];
     bool m_Entity_bEnabled; 
 };
 
@@ -2745,8 +2745,8 @@ struct __declspec(align(8))  C_EnvVolumetricFogController {
     int32 m_nIndirectTextureDimZ; 
     Vector m_vBoxMins; // Size: 12
     Vector m_vBoxMaxs; // Size: 12
-    char m_pad3_1460[3];
     bool m_bActive; 
+    char m_pad3_1460[3];
     GameTime_t m_flStartAnisoTime; 
     GameTime_t m_flStartScatterTime; 
     GameTime_t m_flStartDrawDistanceTime; 
@@ -2759,8 +2759,8 @@ struct __declspec(align(8))  C_EnvVolumetricFogController {
     bool m_bStartDisabled; 
     bool m_bEnableIndirect; 
     bool m_bIndirectUseLPVs; 
-    char m_pad4_1504[4];
     bool m_bIsMaster; 
+    char m_pad4_1504[4];
     CStrongHandle< InfoForResourceTypeCTextureBase > m_hFogIndirectTexture; // Size: 8
     int32 m_nForceRefreshCount; 
     float32 m_fNoiseSpeed; 
@@ -2771,12 +2771,12 @@ struct __declspec(align(8))  C_EnvVolumetricFogController {
 
 struct __declspec(align(8))  C_EnvVolumetricFogVolume {
     char m_pad[1384];
-    char m_pad3_1388[3];
     bool m_bActive; 
+    char m_pad3_1388[3];
     Vector m_vBoxMins; // Size: 12
     Vector m_vBoxMaxs; // Size: 12
-    char m_pad3_1416[3];
     bool m_bStartDisabled; 
+    char m_pad3_1416[3];
     float32 m_flStrength; 
     int32 m_nFalloffShape; 
     float32 m_flFalloffExponent; 
@@ -2811,8 +2811,8 @@ struct __declspec(align(8))  CInfoWorldLayer {
     CUtlSymbolLarge m_layerName; // Size: 8
     bool m_bWorldLayerVisible; 
     bool m_bEntitiesSpawned; 
-    char m_pad1_1444[1];
     bool m_bCreateAsChildSpawnGroup; 
+    char m_pad1_1444[1];
     uint32 m_hLayerSpawnGroup; 
     bool m_bWorldLayerActuallyVisible; 
 };
@@ -2833,8 +2833,8 @@ struct __declspec(align(8))  CPointTemplate {
     CUtlSymbolLarge m_iszSource2EntityLumpName; // Size: 8
     CUtlSymbolLarge m_iszEntityFilterName; // Size: 8
     float32 m_flTimeoutInterval; 
-    char m_pad3_1416[3];
     bool m_bAsynchronouslySpawnEntities; 
+    char m_pad3_1416[3];
     CEntityIOOutput m_pOutputOnSpawned; // Size: 40
     PointTemplateClientOnlyEntityBehavior_t m_clientOnlyEntityBehavior; 
     PointTemplateOwnerSpawnGroupType_t m_ownerSpawnGroupType; 
@@ -2851,10 +2851,10 @@ struct __declspec(align(8))  CRagdollManager {
 
 struct  C_SoundAreaEntityBase {
     char m_pad[1384];
-    char m_pad7_1392[7];
     bool m_bDisabled; // Size: 8
-    char m_pad7_1400[7];
+    char m_pad7_1392[7];
     bool m_bWasEnabled; // Size: 8
+    char m_pad7_1400[7];
     CUtlSymbolLarge m_iszSoundAreaType; // Size: 8
     Vector m_vPos; 
 };
@@ -2876,16 +2876,16 @@ struct __declspec(align(8))  C_SoundEventEntity {
     bool m_bToLocalPlayer; 
     bool m_bStopOnNew; 
     bool m_bSaveRestore; 
-    char m_pad3_1392[3];
     bool m_bSavedIsPlaying; 
-    char m_pad4_1400[4];
+    char m_pad3_1392[3];
     float32 m_flSavedElapsedTime; // Size: 8
+    char m_pad4_1400[4];
     CUtlSymbolLarge m_iszSourceEntityName; // Size: 8
     CUtlSymbolLarge m_iszAttachmentName; // Size: 8
     CEntityOutputTemplate< uint64 > m_onGUIDChanged; // Size: 40
     CEntityIOOutput m_onSoundFinished; // Size: 40
-    char m_pad44_1544[44];
     float32 m_flClientCullRadius; // Size: 48
+    char m_pad44_1544[44];
     CUtlSymbolLarge m_iszSoundName; // Size: 16
     CEntityHandle m_hSource; 
     int32 m_nEntityIndexSelection; 
@@ -2980,8 +2980,8 @@ struct __declspec(align(8))  CBasePlayerWeaponVData {
     CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_szWorldModel; // Size: 224
     CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_sToolsOnlyOwnerModelName; // Size: 224
     bool m_bBuiltRightHanded; 
-    char m_pad6_496[6];
     bool m_bAllowFlipping; 
+    char m_pad6_496[6];
     CAttachmentNameSymbolWithStorage m_sMuzzleAttachment; // Size: 32
     CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szMuzzleFlashParticle; // Size: 224
     bool m_bLinkedCooldowns; 
@@ -2992,16 +2992,16 @@ struct __declspec(align(8))  CBasePlayerWeaponVData {
     int32 m_iMaxClip2; 
     int32 m_iDefaultClip1; 
     int32 m_iDefaultClip2; 
-    char m_pad3_776[3];
     bool m_bReserveAmmoAsClips; 
+    char m_pad3_776[3];
     int32 m_iWeight; 
     bool m_bAutoSwitchTo; 
-    char m_pad2_784[2];
     bool m_bAutoSwitchFrom; 
+    char m_pad2_784[2];
     RumbleEffect_t m_iRumbleEffect; 
     int32 m_iSlot; 
-    char m_pad4_800[4];
     int32 m_iPosition; // Size: 8
+    char m_pad4_800[4];
     CUtlOrderedMap< WeaponSound_t, CSoundEventName > m_aShootSounds; 
 };
 
@@ -3043,12 +3043,12 @@ struct __declspec(align(8))  C_ParticleSystem {
     char m_pad[3368];
     char[512] m_szSnapshotFileName; // Size: 512
     bool m_bActive; 
-    char m_pad2_3884[2];
     bool m_bFrozen; 
+    char m_pad2_3884[2];
     float32 m_flFreezeTransitionDuration; 
     int32 m_nStopType; 
-    char m_pad3_3896[3];
     bool m_bAnimateDuringGameplayPause; 
+    char m_pad3_3896[3];
     CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_iEffectIndex; // Size: 8
     GameTime_t m_flStartTime; 
     float32 m_flPreSimTime; 
@@ -3071,8 +3071,8 @@ struct __declspec(align(8))  C_ParticleSystem {
 
 struct __declspec(align(8))  C_PathParticleRope {
     char m_pad[1392];
-    char m_pad3_1396[3];
     bool m_bStartActive; 
+    char m_pad3_1396[3];
     float32 m_flMaxSimulationTime; 
     CUtlSymbolLarge m_iszEffectName; // Size: 8
     CUtlVector< CUtlSymbolLarge > m_PathNodes_Name; // Size: 24
@@ -3080,8 +3080,8 @@ struct __declspec(align(8))  C_PathParticleRope {
     float32 m_flSlack; 
     float32 m_flRadius; 
     Color m_ColorTint; 
-    char m_pad4_1456[4];
     int32 m_nEffectState; // Size: 8
+    char m_pad4_1456[4];
     CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_iEffectIndex; // Size: 8
     C_NetworkUtlVectorBase< Vector > m_PathNodes_Position; // Size: 24
     C_NetworkUtlVectorBase< Vector > m_PathNodes_TangentIn; // Size: 24
@@ -3102,8 +3102,8 @@ struct __declspec(align(8))  CPathSimple {
 struct __declspec(align(8))  C_DynamicLight {
     char m_pad[3368];
     uint8 m_Flags; 
-    char m_pad2_3372[2];
     uint8 m_LightStyle; 
+    char m_pad2_3372[2];
     float32 m_Radius; 
     int32 m_Exponent; 
     float32 m_InnerAngle; 
@@ -3118,8 +3118,8 @@ struct __declspec(align(8))  C_EnvScreenOverlay {
     GameTime_t m_flStartTime; 
     int32 m_iDesiredOverlay; 
     bool m_bIsActive; 
-    char m_pad2_1516[2];
     bool m_bWasActive; 
+    char m_pad2_1516[2];
     int32 m_iCachedDesiredOverlay; 
     int32 m_iCurrentOverlay; 
     GameTime_t m_flCurrentOverlayTime; 
@@ -3151,8 +3151,8 @@ struct __declspec(align(8))  C_LightGlow {
     uint32 m_nMaxDist; 
     uint32 m_nOuterMaxDist; 
     float32 m_flGlowProxySize; 
-    char m_pad4_3400[4];
     float32 m_flHDRColorScale; // Size: 8
+    char m_pad4_3400[4];
     C_LightGlowOverlay m_GlowOverlay; 
 };
 
@@ -3166,16 +3166,16 @@ struct __declspec(align(8))  C_PointValueRemapper {
     char m_pad[1384];
     bool m_bDisabled; 
     bool m_bDisabledOld; 
-    char m_pad1_1388[1];
     bool m_bUpdateOnClient; 
+    char m_pad1_1388[1];
     ValueRemapperInputType_t m_nInputType; 
     CHandle< C_BaseEntity > m_hRemapLineStart; 
     CHandle< C_BaseEntity > m_hRemapLineEnd; 
     float32 m_flMaximumChangePerSecond; 
     float32 m_flDisengageDistance; 
     float32 m_flEngageDistance; 
-    char m_pad3_1416[3];
     bool m_bRequiresUseKey; 
+    char m_pad3_1416[3];
     ValueRemapperOutputType_t m_nOutputType; // Size: 8
     C_NetworkUtlVectorBase< CHandle< C_BaseEntity > > m_hOutputEntities; // Size: 24
     ValueRemapperHapticsType_t m_nHapticsType; 
@@ -3187,8 +3187,8 @@ struct __declspec(align(8))  C_PointValueRemapper {
     float32 m_flRatchetOffset; 
     float32 m_flInputOffset; 
     bool m_bEngaged; 
-    char m_pad2_1484[2];
     bool m_bFirstUpdate; 
+    char m_pad2_1484[2];
     float32 m_flPreviousValue; 
     GameTime_t m_flPreviousUpdateTickTime; 
     Vector m_vecPreviousTestPoint; 
@@ -3196,13 +3196,13 @@ struct __declspec(align(8))  C_PointValueRemapper {
 
 struct __declspec(align(8))  C_PointWorldText {
     char m_pad[3376];
-    char m_pad15_3392[15];
     bool m_bForceRecreateNextUpdate; // Size: 16
+    char m_pad15_3392[15];
     char[512] m_messageText; // Size: 512
     char[64] m_FontName; // Size: 64
     bool m_bEnabled; 
-    char m_pad2_3972[2];
     bool m_bFullbright; 
+    char m_pad2_3972[2];
     float32 m_flWorldUnitsPerPx; 
     float32 m_flFontSize; 
     float32 m_flDepthOffset; 
@@ -3241,8 +3241,8 @@ struct __declspec(align(8))  C_BaseToggle {
 struct __declspec(align(8))  C_BaseButton {
     char m_pad[3368];
     CHandle< C_BaseModelEntity > m_glowEntity; 
-    char m_pad3_3376[3];
     bool m_usable; 
+    char m_pad3_3376[3];
     CUtlSymbolLarge m_szDisplayText; 
 };
 
@@ -3278,8 +3278,8 @@ struct __declspec(align(8))  C_EnvDecal {
     uint32 m_nRenderOrder; 
     bool m_bProjectOnWorld; 
     bool m_bProjectOnCharacters; 
-    char m_pad1_3396[1];
     bool m_bProjectOnWater; 
+    char m_pad1_3396[1];
     float32 m_flDepthSortBias; 
 };
 
@@ -3306,22 +3306,22 @@ struct __declspec(align(8))  C_BaseFlex {
     char m_pad[3992];
     C_NetworkUtlVectorBase< float32 > m_flexWeight; // Size: 24
     Vector m_vLookTargetPosition; // Size: 24
-    char m_pad95_4136[95];
     bool m_blinktoggle; // Size: 96
+    char m_pad95_4136[95];
     int32 m_nLastFlexUpdateFrameCount; 
     Vector m_CachedViewTarget; // Size: 12
     SceneEventId_t m_nNextSceneEventId; 
     int32 m_iBlink; 
     float32 m_blinktime; 
-    char m_pad3_4168[3];
     bool m_prevblinktoggle; 
+    char m_pad3_4168[3];
     int32 m_iJawOpen; 
     float32 m_flJawOpenAmount; 
     float32 m_flBlinkAmount; 
     AttachmentHandle_t m_iMouthAttachment; 
     AttachmentHandle_t m_iEyeAttachment; 
-    char m_pad25_4208[25];
     bool m_bResetFlexWeightsOnModelChange; // Size: 26
+    char m_pad25_4208[25];
     int32 m_nEyeOcclusionRendererBone; 
     matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform; // Size: 48
     Vector m_vEyeOcclusionRendererHalfExtent; // Size: 28
@@ -3336,12 +3336,12 @@ struct __declspec(align(8))  C_SceneEntity {
     bool m_bAutogenerated; 
     float32 m_flForceClientTime; 
     uint16 m_nSceneStringIndex; 
-    char m_pad1_1404[1];
     bool m_bClientOnly; 
+    char m_pad1_1404[1];
     CHandle< C_BaseFlex > m_hOwner; 
     C_NetworkUtlVectorBase< CHandle< C_BaseFlex > > m_hActorList; // Size: 24
-    char m_pad15_1448[15];
     bool m_bWasPlaying; // Size: 16
+    char m_pad15_1448[15];
     CUtlVector< C_SceneEntity::QueuedEvents_t > m_QueuedEvents; // Size: 24
     float32 m_flCurrentTime; 
 };
@@ -3362,8 +3362,8 @@ struct __declspec(align(8))  C_Sun {
     CUtlSymbolLarge m_iszSSEffectName; // Size: 8
     Color m_clrOverlay; 
     bool m_bOn; 
-    char m_pad2_3432[2];
     bool m_bmaxColor; 
+    char m_pad2_3432[2];
     float32 m_flSize; 
     float32 m_flHazeScale; 
     float32 m_flRotation; 
@@ -3400,8 +3400,8 @@ struct __declspec(align(8))  C_TriggerPhysics {
     float32 m_flFrequency; 
     float32 m_flDampingRatio; 
     Vector m_vecLinearForcePointAt; // Size: 12
-    char m_pad3_3424[3];
     bool m_bCollapseToForcePoint; 
+    char m_pad3_3424[3];
     Vector m_vecLinearForcePointAtWorld; // Size: 12
     Vector m_vecLinearForceDirection; // Size: 12
     bool m_bConvertToDebrisWhenPossible; 
@@ -3413,10 +3413,10 @@ struct __declspec(align(8))  C_Beam {
     float32 m_flHDRColorScale; 
     GameTime_t m_flFireTime; 
     float32 m_flDamage; 
-    char m_pad3_3388[3];
     uint8 m_nNumBeamEnts; 
-    char m_pad32_3424[32];
+    char m_pad3_3388[3];
     int32 m_queryHandleHalo; // Size: 36
+    char m_pad32_3424[32];
     CStrongHandle< InfoForResourceTypeIMaterial2 > m_hBaseMaterial; // Size: 8
     CStrongHandle< InfoForResourceTypeIMaterial2 > m_nHaloIndex; // Size: 8
     BeamType_t m_nBeamType; 
@@ -3432,8 +3432,8 @@ struct __declspec(align(8))  C_Beam {
     float32 m_fSpeed; 
     float32 m_flFrame; 
     BeamClipStyle_t m_nClipStyle; 
-    char m_pad3_3540[3];
     bool m_bTurnedOff; 
+    char m_pad3_3540[3];
     Vector m_vecEndPos; // Size: 12
     CHandle< C_BaseEntity > m_hEndEntity; 
 };
@@ -3456,11 +3456,11 @@ struct __declspec(align(8))  CPrecipitationVData {
     CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szParticlePrecipitationEffect; // Size: 224
     float32 m_flInnerDistance; 
     ParticleAttachment_t m_nAttachType; 
-    char m_pad3_276[3];
     bool m_bBatchSameVolumeType; 
+    char m_pad3_276[3];
     int32 m_nRTEnvCP; 
-    char m_pad4_288[4];
     int32 m_nRTEnvCPComponent; // Size: 8
+    char m_pad4_288[4];
     CUtlString m_szModifier; 
 };
 
@@ -3476,8 +3476,8 @@ struct __declspec(align(8))  C_Sprite {
     float32 m_flBrightnessDuration; 
     float32 m_flSpriteScale; 
     float32 m_flScaleDuration; 
-    char m_pad3_3428[3];
     bool m_bWorldSpaceScale; 
+    char m_pad3_3428[3];
     float32 m_flGlowProxySize; 
     float32 m_flHDRColorScale; 
     GameTime_t m_flLastTime; 
@@ -3498,8 +3498,8 @@ struct __declspec(align(8))  CSpriteOriented {
 
 struct  C_BaseClientUIEntity {
     char m_pad[3376];
-    char m_pad7_3384[7];
     bool m_bEnabled; // Size: 8
+    char m_pad7_3384[7];
     CUtlSymbolLarge m_DialogXMLName; // Size: 8
     CUtlSymbolLarge m_PanelClassName; // Size: 8
     CUtlSymbolLarge m_PanelID; 
@@ -3513,10 +3513,10 @@ struct __declspec(align(8))  C_PointClientUIDialog {
 
 struct __declspec(align(8))  C_PointClientUIHUD {
     char m_pad[3424];
-    char m_pad383_3808[383];
     bool m_bCheckCSSClasses; // Size: 384
-    char m_pad3_3812[3];
+    char m_pad383_3808[383];
     bool m_bIgnoreInput; 
+    char m_pad3_3812[3];
     float32 m_flWidth; 
     float32 m_flHeight; 
     float32 m_flDPI; 
@@ -3526,16 +3526,16 @@ struct __declspec(align(8))  C_PointClientUIHUD {
     uint32 m_unHorizontalAlign; 
     uint32 m_unVerticalAlign; 
     uint32 m_unOrientation; 
-    char m_pad7_3856[7];
     bool m_bAllowInteractionFromAllSceneWorlds; // Size: 8
+    char m_pad7_3856[7];
     C_NetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; 
 };
 
 struct __declspec(align(16))  CPointOffScreenIndicatorUi {
     char m_pad[3984];
     bool m_bBeenEnabled; 
-    char m_pad2_3988[2];
     bool m_bHide; 
+    char m_pad2_3988[2];
     float32 m_flSeenTargetTime; 
     C_PointClientUIWorldPanel* m_pTargetPanel; 
 };
@@ -3544,14 +3544,14 @@ struct __declspec(align(16))  C_PointClientUIWorldPanel {
     char m_pad[3424];
     bool m_bForceRecreateNextUpdate; 
     bool m_bMoveViewToPlayerNextThink; 
-    char m_pad13_3440[13];
     bool m_bCheckCSSClasses; // Size: 14
+    char m_pad13_3440[13];
     CTransform m_anchorDeltaTransform; // Size: 408
     CPointOffScreenIndicatorUi* m_pOffScreenIndicator; // Size: 40
     bool m_bIgnoreInput; 
     bool m_bLit; 
-    char m_pad1_3892[1];
     bool m_bFollowPlayerAcrossTeleport; 
+    char m_pad1_3892[1];
     float32 m_flWidth; 
     float32 m_flHeight; 
     float32 m_flDPI; 
@@ -3561,8 +3561,8 @@ struct __declspec(align(16))  C_PointClientUIWorldPanel {
     uint32 m_unHorizontalAlign; 
     uint32 m_unVerticalAlign; 
     uint32 m_unOrientation; 
-    char m_pad7_3936[7];
     bool m_bAllowInteractionFromAllSceneWorlds; // Size: 8
+    char m_pad7_3936[7];
     C_NetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // Size: 24
     bool m_bOpaque; 
     bool m_bNoDepth; 
@@ -3582,16 +3582,16 @@ struct __declspec(align(16))  C_PointClientUIWorldTextPanel {
 
 struct __declspec(align(8))  CInfoOffscreenPanoramaTexture {
     char m_pad[1384];
-    char m_pad3_1388[3];
     bool m_bDisabled; 
+    char m_pad3_1388[3];
     int32 m_nResolutionX; 
-    char m_pad4_1400[4];
     int32 m_nResolutionY; // Size: 8
+    char m_pad4_1400[4];
     CUtlSymbolLarge m_szLayoutFileName; // Size: 8
     CUtlSymbolLarge m_RenderAttrName; // Size: 8
     C_NetworkUtlVectorBase< CHandle< C_BaseModelEntity > > m_TargetEntities; // Size: 24
-    char m_pad4_1448[4];
     int32 m_nTargetChangeCount; // Size: 8
+    char m_pad4_1448[4];
     C_NetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // Size: 376
     bool m_bCheckCSSClasses; 
 };
@@ -3661,15 +3661,15 @@ struct __declspec(align(8))  CCSWeaponBaseVData {
     bool m_bMeleeWeapon; 
     bool m_bHasBurstMode; 
     bool m_bIsRevolver; 
-    char m_pad4_3360[4];
     bool m_bCannotShootUnderwater; 
+    char m_pad4_3360[4];
     CGlobalSymbol m_szName; // Size: 8
     CUtlString m_szAnimExtension; // Size: 8
     CSWeaponSilencerType m_eSilencerType; 
     int32 m_nCrosshairMinDistance; 
     int32 m_nCrosshairDeltaDistance; 
-    char m_pad3_3392[3];
     bool m_bIsFullAuto; 
+    char m_pad3_3392[3];
     int32 m_nNumBullets; 
     CFiringModeFloat m_flCycleTime; // Size: 8
     CFiringModeFloat m_flMaxSpeed; // Size: 8
@@ -3697,12 +3697,12 @@ struct __declspec(align(8))  CCSWeaponBaseVData {
     float32 m_flHeatPerShot; 
     float32 m_flInaccuracyPitchShift; 
     float32 m_flInaccuracyAltSoundThreshold; 
-    char m_pad4_3568[4];
     float32 m_flBotAudibleRange; // Size: 8
+    char m_pad4_3568[4];
     CUtlString m_szUseRadioSubtitle; // Size: 8
     bool m_bUnzoomsAfterShot; 
-    char m_pad2_3580[2];
     bool m_bHideViewModelWhenZoomed; 
+    char m_pad2_3580[2];
     int32 m_nZoomLevels; 
     int32 m_nZoomFOV1; 
     int32 m_nZoomFOV2; 
@@ -3761,8 +3761,8 @@ struct __declspec(align(8))  C_FuncConveyor {
     float32 m_flTargetSpeed; 
     GameTick_t m_nTransitionStartTick; 
     int32 m_nTransitionDurationTicks; 
-    char m_pad4_3408[4];
     float32 m_flTransitionStartSpeed; // Size: 8
+    char m_pad4_3408[4];
     C_NetworkUtlVectorBase< CHandle< C_BaseEntity > > m_hConveyorModels; // Size: 24
     float32 m_flCurrentConveyorOffset; 
     float32 m_flCurrentConveyorSpeed; 
@@ -3789,14 +3789,14 @@ struct __declspec(align(16))  C_Inferno {
     int32 m_fireCount; 
     int32 m_nInfernoType; 
     float32 m_nFireLifetime; 
-    char m_pad3_5864[3];
     bool m_bInPostEffectTime; 
+    char m_pad3_5864[3];
     int32 m_lastFireCount; 
-    char m_pad27648_33520[27648];
     int32 m_nFireEffectTickBegin; // Size: 27652
+    char m_pad27648_33520[27648];
     int32 m_drawableCount; 
-    char m_pad3_33528[3];
     bool m_blosCheck; 
+    char m_pad3_33528[3];
     int32 m_nlosperiod; 
     float32 m_maxFireHalfWidth; 
     float32 m_maxFireHeight; 
@@ -3810,8 +3810,8 @@ struct __declspec(align(16))  C_FireCrackerBlast {
 
 struct __declspec(align(8))  C_BarnLight {
     char m_pad[3368];
-    char m_pad3_3372[3];
     bool m_bEnabled; 
+    char m_pad3_3372[3];
     int32 m_nColorMode; 
     Color m_Color; 
     float32 m_flColorTemperature; 
@@ -3821,8 +3821,8 @@ struct __declspec(align(8))  C_BarnLight {
     int32 m_nBakedShadowIndex; 
     int32 m_nLuminaireShape; 
     float32 m_flLuminaireSize; 
-    char m_pad4_3416[4];
     float32 m_flLuminaireAnisotropy; // Size: 8
+    char m_pad4_3416[4];
     CUtlString m_LightStyleString; // Size: 8
     GameTime_t m_flLightStyleStartTime; // Size: 8
     C_NetworkUtlVectorBase< CUtlString > m_QueuedLightStyleStrings; // Size: 24
@@ -3843,8 +3843,8 @@ struct __declspec(align(8))  C_BarnLight {
     int32 m_nCastShadows; 
     int32 m_nShadowMapSize; 
     int32 m_nShadowPriority; 
-    char m_pad3_3752[3];
     bool m_bContactShadow; 
+    char m_pad3_3752[3];
     int32 m_nBounceLight; 
     float32 m_flBounceScale; 
     float32 m_flMinRoughness; 
@@ -3854,14 +3854,14 @@ struct __declspec(align(8))  C_BarnLight {
     float32 m_flFogStrength; 
     int32 m_nFogShadows; 
     float32 m_flFogScale; 
-    char m_pad3_3800[3];
     bool m_bFogMixedShadows; 
+    char m_pad3_3800[3];
     float32 m_flFadeSizeStart; 
     float32 m_flFadeSizeEnd; 
     float32 m_flShadowFadeSizeStart; 
     float32 m_flShadowFadeSizeEnd; 
-    char m_pad3_3820[3];
     bool m_bPrecomputedFieldsValid; 
+    char m_pad3_3820[3];
     Vector m_vPrecomputedBoundsMins; // Size: 12
     Vector m_vPrecomputedBoundsMaxs; // Size: 12
     Vector m_vPrecomputedOBBOrigin; // Size: 12
@@ -3886,8 +3886,8 @@ struct __declspec(align(8))  C_BarnLight {
     Vector m_vPrecomputedOBBOrigin5; // Size: 12
     QAngle m_vPrecomputedOBBAngles5; // Size: 12
     Vector m_vPrecomputedOBBExtent5; // Size: 80
-    char m_pad7_4176[7];
     bool m_bInitialBoneSetup; // Size: 8
+    char m_pad7_4176[7];
     C_NetworkUtlVectorBase< uint16 > m_VisClusters; 
 };
 
@@ -3907,8 +3907,8 @@ struct __declspec(align(8))  C_CSTeam {
     char m_pad[1568];
     char[512] m_szTeamMatchStat; // Size: 512
     int32 m_numMapVictories; 
-    char m_pad3_2088[3];
     bool m_bSurrendered; 
+    char m_pad3_2088[3];
     int32 m_scoreFirstHalf; 
     int32 m_scoreSecondHalf; 
     int32 m_scoreOvertime; 
@@ -3923,8 +3923,8 @@ struct __declspec(align(8))  C_MapPreviewParticleSystem {
 
 struct __declspec(align(8))  CInfoDynamicShadowHint {
     char m_pad[1384];
-    char m_pad3_1388[3];
     bool m_bDisabled; 
+    char m_pad3_1388[3];
     float32 m_flRange; 
     int32 m_nImportance; 
     int32 m_nLightChoice; 
@@ -3984,8 +3984,8 @@ struct __declspec(align(8))  C_EnvParticleGlow {
 
 struct __declspec(align(8))  C_TextureBasedAnimatable {
     char m_pad[3368];
-    char m_pad3_3372[3];
     bool m_bLoop; 
+    char m_pad3_3372[3];
     float32 m_flFPS; 
     CStrongHandle< InfoForResourceTypeCTextureBase > m_hPositionKeys; // Size: 8
     CStrongHandle< InfoForResourceTypeCTextureBase > m_hRotationKeys; // Size: 8
@@ -4000,11 +4000,11 @@ struct __declspec(align(8))  C_World {
 
 struct __declspec(align(8))  CBaseProp {
     char m_pad[3976];
-    char m_pad3_3980[3];
     bool m_bModelOverrodeBlockLOS; 
+    char m_pad3_3980[3];
     int32 m_iShapeType; 
-    char m_pad3_3988[3];
     bool m_bConformToCollisionBounds; 
+    char m_pad3_3988[3];
     matrix3x4_t m_mPreferredCatchTransform; 
 };
 
@@ -4025,13 +4025,13 @@ struct __declspec(align(8))  C_BreakableProp {
     BreakableContentsType_t m_BreakableContentsType; // Size: 8
     CUtlString m_strBreakableContentsPropGroupOverride; // Size: 8
     CUtlString m_strBreakableContentsParticleOverride; // Size: 8
-    char m_pad3_4292[3];
     bool m_bHasBreakPiecesOrCommands; 
+    char m_pad3_4292[3];
     float32 m_explodeDamage; 
-    char m_pad4_4304[4];
     float32 m_explodeRadius; // Size: 8
-    char m_pad4_4312[4];
+    char m_pad4_4304[4];
     float32 m_explosionDelay; // Size: 8
+    char m_pad4_4312[4];
     CUtlSymbolLarge m_explosionBuildupSound; // Size: 8
     CUtlSymbolLarge m_explosionCustomEffect; // Size: 8
     CUtlSymbolLarge m_explosionCustomSound; // Size: 8
@@ -4047,8 +4047,8 @@ struct __declspec(align(8))  C_BreakableProp {
 struct __declspec(align(8))  C_DynamicProp {
     char m_pad[4368];
     bool m_bUseHitboxesForRenderBox; 
-    char m_pad6_4376[6];
     bool m_bUseAnimGraph; 
+    char m_pad6_4376[6];
     CEntityIOOutput m_pOutputAnimBegun; // Size: 40
     CEntityIOOutput m_pOutputAnimOver; // Size: 40
     CEntityIOOutput m_pOutputAnimLoopCycleOver; // Size: 40
@@ -4061,8 +4061,8 @@ struct __declspec(align(8))  C_DynamicProp {
     bool m_bFiredStartEndOutput; 
     bool m_bForceNpcExclude; 
     bool m_bCreateNonSolid; 
-    char m_pad2_4596[2];
     bool m_bIsOverrideProp; 
+    char m_pad2_4596[2];
     int32 m_iInitialGlowState; 
     int32 m_nGlowRange; 
     int32 m_nGlowRangeMin; 
@@ -4088,8 +4088,8 @@ struct __declspec(align(8))  C_ColorCorrectionVolume {
     float32 m_LastEnterTime; 
     float32 m_LastExitWeight; 
     float32 m_LastExitTime; 
-    char m_pad3_3396[3];
     bool m_bEnabled; 
+    char m_pad3_3396[3];
     float32 m_MaxWeight; 
     float32 m_FadeDuration; 
     float32 m_Weight; 
@@ -4101,8 +4101,8 @@ struct __declspec(align(16))  C_FuncMonitor {
     CUtlString m_targetCamera; // Size: 8
     int32 m_nResolutionEnum; 
     bool m_bRenderShadows; 
-    char m_pad2_3384[2];
     bool m_bUseUniqueColorTarget; 
+    char m_pad2_3384[2];
     CUtlString m_brushModelName; // Size: 8
     CHandle< C_BaseEntity > m_hTargetCamera; 
     bool m_bEnabled; 
@@ -4124,8 +4124,8 @@ struct __declspec(align(8))  C_PhysMagnet {
 struct __declspec(align(8))  C_PointCommentaryNode {
     char m_pad[3984];
     bool m_bActive; 
-    char m_pad2_3988[2];
     bool m_bWasActive; 
+    char m_pad2_3988[2];
     GameTime_t m_flEndTime; 
     GameTime_t m_flStartTime; 
     float32 m_flStartTimeInCommentary; 
@@ -4134,8 +4134,8 @@ struct __declspec(align(8))  C_PointCommentaryNode {
     CUtlSymbolLarge m_iszSpeakers; // Size: 8
     int32 m_iNodeNumber; 
     int32 m_iNodeNumberMax; 
-    char m_pad15_4048[15];
     bool m_bListenedTo; // Size: 16
+    char m_pad15_4048[15];
     CHandle< C_BaseEntity > m_hViewPosition; 
     bool m_bRestartAfterRestore; 
 };
@@ -4151,8 +4151,8 @@ struct __declspec(align(8))  C_BaseDoor {
 struct __declspec(align(8))  C_ClientRagdoll {
     char m_pad[3976];
     bool m_bFadeOut; 
-    char m_pad2_3980[2];
     bool m_bImportant; 
+    char m_pad2_3980[2];
     GameTime_t m_flEffectTime; 
     GameTime_t m_gibDespawnTime; 
     int32 m_iCurrentFriction; 
@@ -4161,8 +4161,8 @@ struct __declspec(align(8))  C_ClientRagdoll {
     int32 m_iFrictionAnimState; 
     bool m_bReleaseRagdoll; 
     AttachmentHandle_t m_iEyeAttachment; 
-    char m_pad1_4008[1];
     bool m_bFadingOut; 
+    char m_pad1_4008[1];
     float32[10] m_flScaleEnd; // Size: 40
     GameTime_t[10] m_flScaleTimeStart; // Size: 40
     GameTime_t[10] m_flScaleTimeEnd; 
@@ -4170,16 +4170,16 @@ struct __declspec(align(8))  C_ClientRagdoll {
 
 struct __declspec(align(8))  C_Precipitation {
     char m_pad[3376];
-    char m_pad12_3392[12];
     float32 m_flDensity; // Size: 16
-    char m_pad4_3400[4];
+    char m_pad12_3392[12];
     float32 m_flParticleInnerDist; // Size: 8
+    char m_pad4_3400[4];
     char* m_pParticleDef; // Size: 40
     TimedEvent[1] m_tParticlePrecipTraceTimer; // Size: 8
     bool[1] m_bActiveParticlePrecipEmitter; 
     bool m_bParticlePrecipInitialized; 
-    char m_pad1_3452[1];
     bool m_bHasSimulatedSinceLastSceneObjectUpdate; 
+    char m_pad1_3452[1];
     int32 m_nAvailableSheetSequencesMaxIndex; 
 };
 
@@ -4200,8 +4200,8 @@ struct __declspec(align(8))  C_Fish {
     int32 m_localLifeState; 
     float32 m_deathDepth; 
     float32 m_deathAngle; 
-    char m_pad4_4032[4];
     float32 m_buoyancy; // Size: 8
+    char m_pad4_4032[4];
     CountdownTimer m_wiggleTimer; // Size: 24
     float32 m_wigglePhase; 
     float32 m_wiggleRate; 
@@ -4209,8 +4209,8 @@ struct __declspec(align(8))  C_Fish {
     QAngle m_actualAngles; // Size: 12
     Vector m_poolOrigin; // Size: 12
     float32 m_waterLevel; 
-    char m_pad3_4108[3];
     bool m_gotUpdate; 
+    char m_pad3_4108[3];
     float32 m_x; 
     float32 m_y; 
     float32 m_z; 
@@ -4230,8 +4230,8 @@ struct __declspec(align(8))  C_BasePropDoor {
     char m_pad[4664];
     DoorState_t m_eDoorState; 
     bool m_modelChanged; 
-    char m_pad2_4672[2];
     bool m_bLocked; 
+    char m_pad2_4672[2];
     Vector m_closedPosition; // Size: 12
     QAngle m_closedAngles; // Size: 12
     CHandle< C_BasePropDoor > m_hMaster; 
@@ -4281,12 +4281,12 @@ struct __declspec(align(8))  C_LocalTempEntity {
     float32 m_flSpriteScale; 
     int32 m_nFlickerFrame; 
     float32 m_flFrameRate; 
-    char m_pad4_4072[4];
     float32 m_flFrame; // Size: 8
+    char m_pad4_4072[4];
     char* m_pszImpactEffect; // Size: 8
     char* m_pszParticleEffect; // Size: 8
-    char m_pad3_4092[3];
     bool m_bParticleCollision; 
+    char m_pad3_4092[3];
     int32 m_iLastCollisionFrame; 
     Vector m_vLastCollisionOrigin; // Size: 12
     Vector m_vecTempEntVelocity; // Size: 12
@@ -4301,11 +4301,11 @@ struct __declspec(align(8))  C_ShatterGlassShardPhysics {
 
 struct __declspec(align(8))  C_EconEntity {
     char m_pad[4400];
-    char m_pad4_4408[4];
     float32 m_flFlexDelayTime; // Size: 8
+    char m_pad4_4408[4];
     float32* m_flFlexDelayedWeight; // Size: 8
-    char m_pad7_4424[7];
     bool m_bAttributesInitialized; // Size: 8
+    char m_pad7_4424[7];
     C_AttributeContainer m_AttributeManager; // Size: 1192
     uint32 m_OriginalOwnerXuidLow; 
     uint32 m_OriginalOwnerXuidHigh; 
@@ -4314,16 +4314,16 @@ struct __declspec(align(8))  C_EconEntity {
     float32 m_flFallbackWear; 
     int32 m_nFallbackStatTrak; 
     bool m_bClientside; 
-    char m_pad6_5648[6];
     bool m_bParticleSystemsCreated; 
+    char m_pad6_5648[6];
     CUtlVector< int32 > m_vecAttachedParticles; // Size: 24
     CHandle< CBaseAnimGraph > m_hViewmodelAttachment; 
     int32 m_iOldTeam; 
-    char m_pad3_5684[3];
     bool m_bAttachmentDirty; 
+    char m_pad3_5684[3];
     int32 m_nUnloadedModelIndex; 
-    char m_pad12_5704[12];
     int32 m_iNumOwnerValidationRetries; // Size: 16
+    char m_pad12_5704[12];
     CHandle< C_BaseEntity > m_hOldProvidee; // Size: 8
     CUtlVector< C_EconEntity::AttachedModelData_t > m_vecAttachedModels; 
 };
@@ -4338,13 +4338,13 @@ struct __declspec(align(8))  C_BaseGrenade {
     char m_pad[4384];
     bool m_bHasWarnedAI; 
     bool m_bIsSmokeGrenade; 
-    char m_pad1_4388[1];
     bool m_bIsLive; 
+    char m_pad1_4388[1];
     float32 m_DmgRadius; 
     GameTime_t m_flDetonateTime; 
     float32 m_flWarnAITime; 
-    char m_pad4_4408[4];
     float32 m_flDamage; // Size: 8
+    char m_pad4_4408[4];
     CUtlSymbolLarge m_iszBounceSound; // Size: 8
     CUtlString m_ExplosionSound; // Size: 12
     CHandle< C_CSPlayerPawn > m_hThrower; // Size: 24
@@ -4391,8 +4391,8 @@ struct __declspec(align(8))  C_BaseCSGrenadeProjectile {
     char m_pad[4464];
     Vector m_vInitialPosition; // Size: 12
     Vector m_vInitialVelocity; // Size: 12
-    char m_pad4_4496[4];
     int32 m_nBounces; // Size: 8
+    char m_pad4_4496[4];
     CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_nExplodeEffectIndex; // Size: 8
     int32 m_nExplodeEffectTickBegin; 
     Vector m_vecExplodeEffectOrigin; // Size: 12
@@ -4400,8 +4400,8 @@ struct __declspec(align(8))  C_BaseCSGrenadeProjectile {
     Vector vecLastTrailLinePos; // Size: 12
     GameTime_t flNextTrailLineTime; 
     bool m_bExplodeEffectBegan; 
-    char m_pad2_4544[2];
     bool m_bCanCreateGrenadeTrail; 
+    char m_pad2_4544[2];
     ParticleIndex_t m_nSnapshotTrajectoryEffectIndex; // Size: 8
     CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hSnapshotTrajectoryParticleSnapshot; // Size: 8
     CUtlVector< Vector > m_arrTrajectoryTrailPoints; // Size: 24
@@ -4442,8 +4442,8 @@ struct __declspec(align(8))  C_BulletHitModel {
     matrix3x4_t m_matLocal; // Size: 48
     int32 m_iBoneIndex; 
     CHandle< C_BaseEntity > m_hPlayerParent; 
-    char m_pad3_4036[3];
     bool m_bIsHit; 
+    char m_pad3_4036[3];
     float32 m_flTimeCreated; 
     Vector m_vecStartPos; 
 };
@@ -4453,37 +4453,37 @@ struct __declspec(align(8))  C_HostageCarriableProp {
 
 struct __declspec(align(8))  C_PlantedC4 {
     char m_pad[3984];
-    char m_pad3_3988[3];
     bool m_bBombTicking; 
+    char m_pad3_3988[3];
     int32 m_nBombSite; 
-    char m_pad4_4000[4];
     int32 m_nSourceSoundscapeHash; // Size: 8
+    char m_pad4_4000[4];
     EntitySpottedState_t m_entitySpottedState; // Size: 24
     GameTime_t m_flNextGlow; 
     GameTime_t m_flNextBeep; 
     GameTime_t m_flC4Blow; 
     bool m_bCannotBeDefused; 
-    char m_pad2_4040[2];
     bool m_bHasExploded; 
+    char m_pad2_4040[2];
     float32 m_flTimerLength; 
-    char m_pad3_4048[3];
     bool m_bBeingDefused; 
+    char m_pad3_4048[3];
     float32 m_bTriggerWarning; 
     float32 m_bExplodeWarning; 
     bool m_bC4Activated; 
-    char m_pad2_4060[2];
     bool m_bTenSecWarning; 
+    char m_pad2_4060[2];
     float32 m_flDefuseLength; 
     GameTime_t m_flDefuseCountDown; 
-    char m_pad3_4072[3];
     bool m_bBombDefused; 
+    char m_pad3_4072[3];
     CHandle< C_CSPlayerPawn > m_hBombDefuser; 
     CHandle< C_BaseEntity > m_hControlPanel; 
     C_AttributeContainer m_AttributeManager; // Size: 1192
     CHandle< C_Multimeter > m_hDefuserMultimeter; 
     GameTime_t m_flNextRadarFlashTime; 
-    char m_pad3_5284[3];
     bool m_bRadarFlash; 
+    char m_pad3_5284[3];
     CHandle< C_CSPlayerPawn > m_pBombDefuser; 
     GameTime_t m_fLastDefuseTime; // Size: 8
     CBasePlayerController* m_pPredictionOwner; // Size: 8
@@ -4511,12 +4511,12 @@ struct __declspec(align(8))  C_FlashbangProjectile {
 struct __declspec(align(8))  C_Chicken {
     char m_pad[4656];
     CHandle< CBaseAnimGraph > m_hHolidayHatAddon; 
-    char m_pad3_4664[3];
     bool m_jumpedThisFrame; 
+    char m_pad3_4664[3];
     CHandle< C_CSPlayerPawn > m_leader; // Size: 8
     C_AttributeContainer m_AttributeManager; // Size: 1192
-    char m_pad3_5868[3];
     bool m_bAttributesInitialized; 
+    char m_pad3_5868[3];
     ParticleIndex_t m_hWaterWakeParticles; 
     bool m_bIsPreviewModel; 
 };
@@ -4544,11 +4544,11 @@ struct __declspec(align(8))  C_BaseCombatCharacter {
 
 struct __declspec(align(8))  C_CSGOViewModel {
     char m_pad[4129];
-    char m_pad2_4132[2];
     bool m_bShouldIgnoreOffsetAndAccuracy; 
+    char m_pad2_4132[2];
     CEntityIndex m_nLastKnownAssociatedWeaponEntIndex; 
-    char m_pad79_4216[79];
     bool m_bNeedToQueueHighResComposite; // Size: 80
+    char m_pad79_4216[79];
     QAngle m_vLoweredWeaponOffset; 
 };
 
@@ -4576,11 +4576,11 @@ struct  C_CSWeaponBase {
     float32 m_flGunAccuracyPositionDeprecated; 
     int32 m_nLastEmptySoundCmdNum; 
     uint32 m_nViewModelIndex; 
-    char m_pad3_6020[3];
     bool m_bReloadsWithClips; 
+    char m_pad3_6020[3];
     GameTime_t m_flTimeWeaponIdle; 
-    char m_pad7_6032[7];
     bool m_bFireOnEmpty; // Size: 8
+    char m_pad7_6032[7];
     CEntityIOOutput m_OnPlayerPickup; // Size: 40
     CSWeaponMode m_weaponMode; 
     float32 m_flTurningInaccuracyDelta; 
@@ -4592,51 +4592,51 @@ struct  C_CSWeaponBase {
     GameTime_t m_fScopeZoomEndTime; 
     int32 m_iRecoilIndex; 
     float32 m_flRecoilIndex; 
-    char m_pad3_6124[3];
     bool m_bBurstMode; 
+    char m_pad3_6124[3];
     GameTime_t m_flLastBurstModeChangeTime; 
     GameTick_t m_nPostponeFireReadyTicks; 
     float32 m_flPostponeFireReadyFrac; 
     bool m_bInReload; 
-    char m_pad2_6140[2];
     bool m_bReloadVisuallyComplete; 
+    char m_pad2_6140[2];
     GameTime_t m_flDroppedAtTime; 
     bool m_bIsHauledBack; 
-    char m_pad2_6148[2];
     bool m_bSilencerOn; 
+    char m_pad2_6148[2];
     GameTime_t m_flTimeSilencerSwitchComplete; 
     int32 m_iOriginalTeamNumber; 
     int32 m_iMostRecentTeamNumber; 
-    char m_pad3_6164[3];
     bool m_bDroppedNearBuyZone; 
-    char m_pad152_6320[152];
+    char m_pad3_6164[3];
     float32 m_flNextAttackRenderTimeOffset; // Size: 156
+    char m_pad152_6320[152];
     bool m_bClearWeaponIdentifyingUGC; 
     bool m_bVisualsDataSet; 
     bool m_bOldFirstPersonSpectatedState; 
     bool m_bUIWeapon; 
-    char m_pad8_6336[8];
     int32 m_nCustomEconReloadEventId; // Size: 12
+    char m_pad8_6336[8];
     CHandle< C_CSPlayerPawn > m_hPrevOwner; 
     GameTick_t m_nDropTick; // Size: 32
-    char m_pad3_6376[3];
     bool m_donated; 
+    char m_pad3_6376[3];
     GameTime_t m_fLastShotTime; 
     bool m_bWasOwnedByCT; 
-    char m_pad2_6384[2];
     bool m_bWasOwnedByTerrorist; 
+    char m_pad2_6384[2];
     float32 m_gunHeat; 
     uint32 m_smokeAttachments; 
     GameTime_t m_lastSmokeTime; 
     float32 m_flNextClientFireBulletTime; 
-    char m_pad220_6624[220];
     float32 m_flNextClientFireBulletTime_Repredict; // Size: 224
+    char m_pad220_6624[220];
     C_IronSightController m_IronSightController; // Size: 176
-    char m_pad12_6816[12];
     int32 m_iIronSightMode; // Size: 16
+    char m_pad12_6816[12];
     GameTime_t m_flLastLOSTraceFailureTime; 
-    char m_pad88_6912[88];
     int32 m_iNumEmptyAttacks; // Size: 92
+    char m_pad88_6912[88];
     GameTime_t m_flLastMagDropRequestTime; 
     float32 m_flWatTickOffset; 
 };
@@ -4645,8 +4645,8 @@ struct __declspec(align(16))  C_CSWeaponBaseGun {
     char m_pad[6928];
     int32 m_zoomLevel; 
     int32 m_iBurstShotsRemaining; 
-    char m_pad12_6952[12];
     int32 m_iSilencerBodygroup; // Size: 16
+    char m_pad12_6952[12];
     int32 m_silencedModelIndex; 
     bool m_inPrecache; 
     bool m_bNeedsBoltAction; 
@@ -4657,12 +4657,12 @@ struct __declspec(align(16))  C_C4 {
     char[32] m_szScreenText; // Size: 32
     ParticleIndex_t m_activeLightParticleIndex; 
     C4LightEffect_t m_eActiveLightEffect; 
-    char m_pad3_6972[3];
     bool m_bStartedArming; 
+    char m_pad3_6972[3];
     GameTime_t m_fArmedTime; 
     bool m_bBombPlacedAnimation; 
-    char m_pad6_6984[6];
     bool m_bIsPlantingViaUse; 
+    char m_pad6_6984[6];
     EntitySpottedState_t m_entitySpottedState; // Size: 24
     int32 m_nSpotRules; 
     bool[7] m_bPlayedArmingBeeps; 
@@ -4709,16 +4709,16 @@ struct __declspec(align(8))  C_MolotovProjectile {
 struct __declspec(align(8))  C_DecoyProjectile {
     char m_pad[4616];
     int32 m_nDecoyShotTick; 
-    char m_pad32_4656[32];
     int32 m_nClientLastKnownDecoyShotTick; // Size: 36
+    char m_pad32_4656[32];
     GameTime_t m_flTimeParticleEffectSpawn; 
 };
 
 struct __declspec(align(8))  C_SmokeGrenadeProjectile {
     char m_pad[4624];
     int32 m_nSmokeEffectTickBegin; 
-    char m_pad3_4632[3];
     bool m_bDidSmokeEffect; 
+    char m_pad3_4632[3];
     int32 m_nRandomSeed; 
     Vector m_vSmokeColor; // Size: 12
     Vector m_vSmokeDetonationPos; // Size: 16
@@ -4734,15 +4734,15 @@ struct  C_BaseCSGrenade {
     bool m_bIsHeldByPlayer; 
     bool m_bPinPulled; 
     bool m_bJumpThrow; 
-    char m_pad2_6936[2];
     bool m_bThrowAnimating; 
+    char m_pad2_6936[2];
     GameTime_t m_fThrowTime; 
     float32 m_flThrowStrength; 
     float32 m_flThrowStrengthApproach; 
     GameTime_t m_fDropTime; 
     GameTime_t m_fPinPullTime; 
-    char m_pad3_6960[3];
     bool m_bJustPulledPin; 
+    char m_pad3_6960[3];
     GameTick_t m_nNextHoldTick; 
     float32 m_flNextHoldFrac; 
     CHandle< C_CSWeaponBase > m_hSwitchToWeaponAfterThrow; 
@@ -4765,8 +4765,8 @@ struct __declspec(align(16))  C_Item_Healthshot {
 
 struct __declspec(align(16))  C_Fists {
     char m_pad[6928];
-    char m_pad3_6932[3];
     bool m_bPlayingUninterruptableAct; 
+    char m_pad3_6932[3];
     PlayerAnimEvent_t m_nUninterruptableActivity; 
 };
 
@@ -4797,18 +4797,18 @@ struct __declspec(align(8))  C_CSPlayerPawnBase {
     Vector m_vecLastClipCameraPos; // Size: 12
     Vector m_vecLastClipCameraForward; // Size: 12
     bool m_bClipHitStaticWorld; 
-    char m_pad2_5024[2];
     bool m_bCachedPlaneIsValid; 
+    char m_pad2_5024[2];
     C_CSWeaponBase* m_pClippingWeapon; // Size: 8
     CSPlayerState m_previousPlayerState; 
     CSPlayerState m_iPlayerState; 
-    char m_pad3_5044[3];
     bool m_bIsRescuing; 
+    char m_pad3_5044[3];
     GameTime_t m_fImmuneToGunGameDamageTime; 
     GameTime_t m_fImmuneToGunGameDamageTimeLast; 
     bool m_bGunGameImmunity; 
-    char m_pad2_5056[2];
     bool m_bHasMovedSinceSpawn; 
+    char m_pad2_5056[2];
     float32 m_fMolotovUseTime; 
     float32 m_fMolotovDamageTime; 
     int32 m_iThrowGrenadeCounter; 
@@ -4818,30 +4818,30 @@ struct __declspec(align(8))  C_CSPlayerPawnBase {
     Vector m_vecIntroStartEyePosition; // Size: 12
     Vector m_vecIntroStartPlayerForward; // Size: 12
     GameTime_t m_flClientDeathTime; 
-    char m_pad3_5112[3];
     bool m_bScreenTearFrameCaptured; 
+    char m_pad3_5112[3];
     float32 m_flFlashBangTime; 
     float32 m_flFlashScreenshotAlpha; 
     float32 m_flFlashOverlayAlpha; 
     bool m_bFlashBuildUp; 
     bool m_bFlashDspHasBeenCleared; 
-    char m_pad1_5128[1];
     bool m_bFlashScreenshotHasBeenGrabbed; 
+    char m_pad1_5128[1];
     float32 m_flFlashMaxAlpha; 
     float32 m_flFlashDuration; 
     int32 m_iHealthBarRenderMaskIndex; 
     float32 m_flHealthFadeValue; 
-    char m_pad12_5160[12];
     float32 m_flHealthFadeAlpha; // Size: 16
+    char m_pad12_5160[12];
     float32 m_flDeathCCWeight; 
     float32 m_flPrevRoundEndTime; 
-    char m_pad4_5176[4];
     float32 m_flPrevMatchEndTime; // Size: 8
+    char m_pad4_5176[4];
     QAngle m_angEyeAngles; // Size: 24
     float32 m_fNextThinkPushAway; 
     bool m_bShouldAutobuyDMWeapons; 
-    char m_pad2_5208[2];
     bool m_bShouldAutobuyNow; 
+    char m_pad2_5208[2];
     CEntityIndex m_iIDEntIndex; // Size: 8
     CountdownTimer m_delayTargetIDTimer; // Size: 24
     CEntityIndex m_iTargetItemEntIdx; 
@@ -4849,8 +4849,8 @@ struct __declspec(align(8))  C_CSPlayerPawnBase {
     CountdownTimer m_holdTargetIDTimer; // Size: 28
     float32 m_flCurrentMusicStartTime; 
     float32 m_flMusicRoundStartTime; 
-    char m_pad3_5288[3];
     bool m_bDeferStartMusicOnWarmup; 
+    char m_pad3_5288[3];
     int32 m_cycleLatch; 
     float32 m_serverIntendedCycle; 
     float32 m_flLastSmokeOverlayAlpha; 
@@ -4862,8 +4862,8 @@ struct __declspec(align(8))  C_CSPlayerPawnBase {
     float32 m_flNextMagDropTime; 
     int32 m_nLastMagDropAttachmentIndex; 
     Vector m_vecLastAliveLocalVelocity; // Size: 40
-    char m_pad7_5384[7];
     bool m_bGuardianShouldSprayCustomXMark; // Size: 8
+    char m_pad7_5384[7];
     CHandle< CCSPlayerController > m_hOriginalController; 
 };
 
@@ -4874,11 +4874,11 @@ struct __declspec(align(8))  C_Hostage {
     CountdownTimer m_reuseTimer; // Size: 24
     Vector m_vel; // Size: 12
     bool m_isRescued; 
-    char m_pad2_4592[2];
     bool m_jumpedThisFrame; 
+    char m_pad2_4592[2];
     int32 m_nHostageState; 
-    char m_pad3_4600[3];
     bool m_bHandsHaveBeenCut; 
+    char m_pad3_4600[3];
     CHandle< C_CSPlayerPawn > m_hHostageGrabber; 
     GameTime_t m_fLastGrabTime; 
     Vector m_vecGrabbedPos; // Size: 12
@@ -5013,6 +5013,5 @@ struct __declspec(align(16))  C_CSGO_PreviewPlayer {
 
 struct __declspec(align(16))  C_CSGO_PreviewPlayerAlias_csgo_player_previewmodel {
 };
-
 
 ```
